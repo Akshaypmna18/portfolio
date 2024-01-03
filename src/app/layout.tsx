@@ -30,7 +30,6 @@ export const metadata: Metadata = {
       "Passionate and versatile web developer creating responsive and user-friendly websites. Explore my portfolio to see a showcase of projects and Skills in front-end technologies",
     images: "@/app/favicon.ico",
     creator: "Akshay K",
-    card: "app",
   },
 };
 
