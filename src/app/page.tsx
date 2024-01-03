@@ -1,5 +1,1 @@
-import React from "react";
-
-export default function Home() {
-  return <></>;
-}
+export { default } from "./App";
