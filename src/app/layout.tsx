@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Noto_Serif } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/features/theme/ThemeProvider";
 
-const notoSerif = Noto_Serif({ subsets: ["latin"] });
+// const poppins = Poppins({
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+//   subsets: ["latin"],
+// });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Akshay K - Personal Portfolio",
@@ -100,7 +104,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={notoSerif.className}>
+      <body suppressHydrationWarning className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
