@@ -6,4 +6,4 @@ export default {
   Component: Theme,
 };
 
-export const Component = (args) => <Theme {...args} />;
+export const Component = (args: any) => <Theme {...args} />;
