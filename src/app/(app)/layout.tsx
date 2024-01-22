@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/features/theme/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSerif = Noto_Serif({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Akshay K - Personal Portfolio",
@@ -47,19 +47,8 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://aks-dev.vercel.app",
     siteName: "Akshay K - Personal Portfolio",
-    images: [
-      {
-        url: "https://github.com/Akshaypmna18/portfolio/blob/master/src/app/icon1.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://github.com/Akshaypmna18/portfolio/blob/master/src/app/icon4.png",
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
-    ],
+    images:
+      "https://github.com/Akshaypmna18/portfolio/blob/master/src/app/icon1.png",
     countryName: "India",
     emails: "akshaypmna18@gmail.com",
     phoneNumbers: "+91 9495956795",
@@ -68,19 +57,8 @@ export const metadata: Metadata = {
     title: "Akshay K - Personal Portfolio",
     description:
       "Passionate and versatile web developer creating responsive and user-friendly websites. Explore my portfolio to see a showcase of projects and Skills in front-end technologies",
-    images: [
-      {
-        url: "https://github.com/Akshaypmna18/portfolio/blob/master/src/app/icon1.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://github.com/Akshaypmna18/portfolio/blob/master/src/app/icon4.png",
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
-    ],
+    images:
+      "https://github.com/Akshaypmna18/portfolio/blob/master/src/app/icon1.png",
     creator: "@akshaypmna18",
   },
   appleWebApp: {
@@ -105,6 +83,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  metadataBase: new URL("https://aks-dev.vercel.app"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -114,8 +100,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={false} className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system">
+      <body suppressHydrationWarning className={notoSerif.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
