@@ -6,4 +6,4 @@ export default {
   Component: App,
 };
 
-export const Component = (args) => <App {...args} />;
+export const Component = (args: any) => <App {...args} />;
