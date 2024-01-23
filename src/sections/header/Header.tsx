@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import links from "@/contants/navLinks";
+import links from "@/constants/navLinks";
 import Link from "next/link";
 
 function Header() {
