@@ -2,8 +2,10 @@
 import SectionHeading from "@/components/SectionHeading";
 import React from "react";
 import { motion } from "framer-motion";
+import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 
 function About() {
+  const ref = useIsVisible("About");
   return (
     <motion.section
       initial={{ y: 100, opacity: 0 }}
@@ -11,6 +13,7 @@ function About() {
       transition={{ delay: 0.15 }}
       id="about"
       className="scroll-mt-28"
+      ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
       <p className="my-3">

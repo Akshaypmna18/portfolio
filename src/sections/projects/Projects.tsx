@@ -1,11 +1,21 @@
+"use client";
 import SectionHeading from "@/components/SectionHeading";
-import projectsData from "@/constants/project";
+import projectsData from "@/lib/project";
 import React, { Fragment } from "react";
 import Project from "./Project";
+import { motion } from "framer-motion";
+import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 
 function Projects() {
+  const ref = useIsVisible("Projects");
   return (
-    <section id="projects" className="scroll-mt-28">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      id="projects"
+      className="scroll-mt-28"
+      ref={ref}
+    >
       <SectionHeading>Projects</SectionHeading>
       <div className="space-y-4">
         {projectsData.map((project, index) => (
@@ -14,7 +24,7 @@ function Projects() {
           </Fragment>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
