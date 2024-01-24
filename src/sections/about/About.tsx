@@ -9,6 +9,8 @@ function About() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.15 }}
+      id="about"
+      className="scroll-mt-28"
     >
       <SectionHeading>About me</SectionHeading>
       <p className="my-3">
