@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { resumeLink } from "@/constants/urls";
+import { resumeLink } from "@/lib/urls";
 
 function Buttons() {
   return (

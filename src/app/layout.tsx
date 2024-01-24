@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/features/theme/ThemeProvider";
-import meta from "@/constants/metadata";
+import meta from "@/lib/metadata";
+import ActiveSectionContextProvider from "@/features/scrollHandlers/ActiveSectionContext";
 
 // const poppins = Poppins({
 //   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -28,7 +29,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ActiveSectionContextProvider>
+            {children}
+          </ActiveSectionContextProvider>
         </ThemeProvider>
       </body>
     </html>
