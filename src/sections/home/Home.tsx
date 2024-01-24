@@ -7,7 +7,7 @@ import Buttons from "./components/Buttons";
 
 function Home() {
   return (
-    <section id="home" className="scroll-mt-28">
+    <section id="home" className="pt-[5rem]">
       <Profile />
       <Intro />
       <Buttons />
