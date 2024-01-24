@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 
 function Projects() {
-  const ref = useIsVisible("Projects");
+  const ref = useIsVisible("Projects", 0.5);
   return (
     <motion.section
       initial={{ y: 100, opacity: 0 }}

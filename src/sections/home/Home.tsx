@@ -7,7 +7,7 @@ import Buttons from "./components/Buttons";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 
 function Home() {
-  const ref = useIsVisible("Home");
+  const ref = useIsVisible("Home", 0.5);
   return (
     <section ref={ref} id="home" className="pt-[5rem]">
       <Profile />
