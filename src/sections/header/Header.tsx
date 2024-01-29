@@ -26,7 +26,11 @@ function Header() {
             >
               <Link
                 href={link.hash}
-                className={`${activeSection === link.name ? "text-white transition" : ""}`}
+                className={`${
+                  activeSection === link.name
+                    ? "text-white transition"
+                    : "hover:text-primaryColor"
+                }`}
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
@@ -35,7 +39,11 @@ function Header() {
                 {link.name}
                 <motion.span
                   // layoutId="activeSection"
-                  className={`${activeSection === link.name ? "absolute bg-primaryColor h-[2px] left-0 right-0 bottom-0 transition" : ""}`}
+                  className={`${
+                    activeSection === link.name
+                      ? "absolute bg-primaryColor h-[2px] left-0 right-0 bottom-0 transition"
+                      : ""
+                  }`}
                 ></motion.span>
               </Link>
             </motion.li>
