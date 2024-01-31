@@ -10,7 +10,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { PaperPlaneIcon } from "@radix-ui/react-icons";
 import sendEmail from "@/lib/sendEmail";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
@@ -46,7 +45,7 @@ function ContactForm() {
       <Toaster />
       <form
         onSubmit={form.handleSubmit(handleSubmit)}
-        className="max-w-[20rem] space-y-4"
+        className="max-w-[20rem] mx-auto pt-4 space-y-4"
       >
         <FormField
           control={form.control}
@@ -96,8 +95,12 @@ function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="hover:text-primaryColor">
-          Send <PaperPlaneIcon className="ml-1 rotate-[-45deg] mb-1" />
+        <Button
+          variant={"outline"}
+          type="submit"
+          className="hover:text-primaryColor"
+        >
+          Send
         </Button>
       </form>
     </Form>
