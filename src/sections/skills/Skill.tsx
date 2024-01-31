@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import skills from "@/lib/skillsdata";
 import { motion } from "framer-motion";
 import Rating from "@mui/material/Rating";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -52,7 +53,12 @@ function Skill() {
             <HoverCardContent>
               <div className="flex gap-4">
                 <Avatar>
-                  <AvatarImage src={imgSrc} alt={`${title}-logo`} />
+                  <Image
+                    src={imgSrc}
+                    alt={`${title}-logo`}
+                    width={50}
+                    height={50}
+                  />
                   <AvatarFallback>Logo</AvatarFallback>
                 </Avatar>
                 <div className="space-y-1">
