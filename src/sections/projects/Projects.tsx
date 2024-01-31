@@ -1,6 +1,6 @@
 "use client";
 import SectionHeading from "@/components/SectionHeading";
-import projectsData from "@/lib/project";
+import projectsData from "@/lib/projects";
 import React, { Fragment } from "react";
 import Project from "./Project";
 import { motion } from "framer-motion";
