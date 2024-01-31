@@ -8,39 +8,39 @@ function About() {
   const ref = useIsVisible("About");
   return (
     <motion.section
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.15 }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
       id="about"
       className="scroll-mt-28"
       ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="my-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        After earning my bachelor's degree in
+        <span className="font-medium"> Computer Applications</span>, I decided
+        to pursue my passion for programming. I am a self-taught front-end
+        developer with a love for{" "}
+        <span className="italic"> problem-solving</span>,{" "}
+        <span className="italic">design</span>, and{" "}
+        <span className="italic">debugging</span>, with a core stack that
+        includes <span className="font-medium">React</span>,{" "}
+        <span className="font-medium">Next.js</span>,{" "}
+        <span className="font-medium">Zustand</span>, and{" "}
+        <span className="font-medium">Tailwind CSS</span>. I'm also familiar
+        with <span className="font-medium">TypeScript</span> and{" "}
+        <span className="font-medium">Redux</span>.
+      </p>
+      <br />
+      <p>
+        Currently, I am actively seeking frontend roles where I can contribute
+        my skills and expertise. Outside of coding, I enjoy{" "}
+        <span className="italic">watching movies and series</span>,{" "}
+        <span className="italic">playing games</span>, and spending quality time
+        with <span className="italic">friends and family</span>. I'm always
+        attracted to the{" "}
+        <span className="font-medium">latest technologies</span> and stay
+        updated to explore <span className="italic">new possibilities</span>.
       </p>
     </motion.section>
   );
