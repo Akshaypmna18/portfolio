@@ -9,8 +9,10 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { resumeLink } from "@/lib/urls";
+import useActiveSectionContext from "@/features/scrollHandlers/useActiveSectionContext";
 
 function Buttons() {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <motion.div
       className="space-x-2"
@@ -22,9 +24,15 @@ function Buttons() {
     >
       <Button
         asChild
-        className="rounded-full md:hover:text-primaryColor md:focus:text-primaryColor "
+        className="rounded-full md:hover:text-primaryColor hover:bg-foreground md:focus:text-primaryColor "
       >
-        <Link href="#contact">
+        <Link
+          href="#contact"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
           Contact me here
           <ArrowRightIcon className="ml-1" />
         </Link>

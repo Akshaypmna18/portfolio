@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Intro() {
   return (
     <motion.h1
-      className=""
+      className="max-w-[55%] mx-auto"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
     >
