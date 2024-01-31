@@ -12,7 +12,7 @@ function About() {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       id="about"
-      className="scroll-mt-28"
+      className="scroll-mt-36"
       ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
