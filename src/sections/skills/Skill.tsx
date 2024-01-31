@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import skills from "@/lib/skillsdata";
 import { motion } from "framer-motion";
+import Rating from "@mui/material/Rating";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -28,26 +29,28 @@ const fadeInAnimationVariants = {
 function Skill() {
   return (
     <div className="flex flex-wrap gap-2">
-      {skills.map(({ title, desc, imgSrc }, index) => {
+      {skills.map(({ title, desc, imgSrc, value }, index) => {
         return (
           <HoverCard key={index}>
             <HoverCardTrigger>
-              <Button asChild variant="outline">
+              <Button
+                asChild
+                variant="outline"
+                className="cursor-[url('https://cdn-icons-png.flaticon.com/512/3135/3135729.png')]"
+              >
                 <motion.li
                   variants={fadeInAnimationVariants}
                   initial="initial"
                   whileInView="animate"
-                  // viewport={{
-                  //   once: true,
-                  // }}
                   custom={index}
+                  className="cursor-default"
                 >
                   {title}
                 </motion.li>
               </Button>
             </HoverCardTrigger>
-            <HoverCardContent className="min-w-40">
-              <div className="flex justify-between space-x-4">
+            <HoverCardContent>
+              <div className="flex gap-4">
                 <Avatar>
                   <AvatarImage src={imgSrc} alt={`${title}-logo`} />
                   <AvatarFallback>Logo</AvatarFallback>
@@ -55,6 +58,12 @@ function Skill() {
                 <div className="space-y-1">
                   {/* <h4 className="text-sm font-semibold">{title}</h4> */}
                   <p className="text-sm">{desc}</p>
+                  <Rating
+                    name="half-rating-read"
+                    defaultValue={value}
+                    precision={0.5}
+                    readOnly
+                  />
                   {/* <Button variant="link" className="p-0" asChild>
                     <a
                       href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
