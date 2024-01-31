@@ -1,55 +1,44 @@
 "use client";
 
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
-import links from "@/lib/navLinks";
-import Link from "next/link";
+import Theme from "@/features/theme";
+import NavBar from "./NavBar";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import useActiveSectionContext from "@/features/scrollHandlers/useActiveSectionContext";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const iconsClass = "h-5 w-5 hover:text-primaryColor" as const;
+  const { activeSection } = useActiveSectionContext();
+  // const { scrollYProgress } = useScroll();
+  // const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
   return (
-    <header className="relative z-10 md:flex justify-center">
-      <motion.nav
-        className="bg-gray-500 w-full fixed md:top-4 md:rounded-full md:w-[min(50%,25rem)] shadow z-10 p-2"
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-      >
-        <ul className="flex flex-wrap justify-evenly gap-3">
-          {links.map((link) => (
-            <motion.li
-              initial={{ y: -200, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              key={link.hash}
-              className="relative"
-            >
-              <Link
-                href={link.hash}
-                className={`${
-                  activeSection === link.name
-                    ? "text-white transition"
-                    : "hover:text-primaryColor"
-                }`}
-                onClick={() => {
-                  setActiveSection(link.name);
-                  setTimeOfLastClick(Date.now());
-                }}
-              >
-                {link.name}
-                <motion.span
-                  // layoutId="activeSection"
-                  className={`${
-                    activeSection === link.name
-                      ? "absolute bg-primaryColor h-[2px] left-0 right-0 bottom-0 transition"
-                      : ""
-                  }`}
-                ></motion.span>
-              </Link>
-            </motion.li>
-          ))}
-        </ul>
-      </motion.nav>
+    <header className="sticky top-0 z-10 md:flex justify-between items-center backdrop-blur-lg p-4">
+      <div className="flex gap-2 items-center">
+        {/* <motion.span style={{ scale }}>hello</motion.span> */}
+        <motion.h2
+          initial={{ y: -200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className="text-foreground font-bold text-2xl"
+        >
+          Akshay K
+        </motion.h2>
+      </div>
+      <NavBar />
+      <div className="mt-1 flex items-center flex-wrap gap-4">
+        <div
+          className={`flex items-center flex-wrap gap-4 -mr-2 ${
+            activeSection === "Home" ? "hidden" : ""
+          }`}
+        >
+          <a href="https://github.com/Akshaypmna18" target="_blank">
+            <GitHubLogoIcon className={iconsClass} />
+          </a>
+          <a href="https://www.linkedin.com/in/akshaypmna" target="_blank">
+            <LinkedInLogoIcon className={iconsClass} />
+          </a>
+        </div>
+        <Theme />
+      </div>
     </header>
   );
 }
