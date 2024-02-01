@@ -14,6 +14,8 @@ const projectsData = [
       "Tailwind",
     ],
     imageUrl: notes,
+    demoLink: "#",
+    codeLink: "https://github.com/Akshaypmna18/portfolio",
   },
   {
     title: "Aks Notes",
@@ -28,6 +30,8 @@ const projectsData = [
       "Tailwind",
     ],
     imageUrl: notes,
+    demoLink: "https://aks-notes-app.vercel.app/",
+    codeLink: "https://github.com/Akshaypmna18/notes-app",
   },
 ] as const;
 

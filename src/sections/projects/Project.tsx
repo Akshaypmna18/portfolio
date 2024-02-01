@@ -5,10 +5,18 @@ import projectsData from "@/lib/projects";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
+import { CodeIcon } from "@radix-ui/react-icons";
 
 type Props = (typeof projectsData)[number];
 
-function Project({ title, description, tags, imageUrl }: Props) {
+function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+  demoLink,
+  codeLink,
+}: Props) {
   const ref = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -30,7 +38,22 @@ function Project({ title, description, tags, imageUrl }: Props) {
       className="group mx-auto rounded bg-secondary border border-black/10 max-w-[40rem] p-4 space-y-4 text-start overflow-hidden relative flex flex-wrap"
     >
       <div className="max-w-[50%] group-even:ml-[50%] space-y-2">
-        <h3 className="text-2xl font-semibold">{title}</h3>
+        <h3 className="text-2xl font-semibold flex items-center gap-2">
+          <a
+            href={demoLink}
+            target={demoLink === "#" ? "" : "_blank"}
+            className="hover:underline"
+          >
+            {title}
+          </a>
+          <a
+            href={codeLink}
+            target="_blank"
+            className="hover:text-primaryColor"
+          >
+            <CodeIcon className="h-6 w-6" />
+          </a>
+        </h3>
         <p>{description}</p>
         <ul className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
