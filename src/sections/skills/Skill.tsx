@@ -50,13 +50,12 @@ function Skill() {
               </Button>
             </HoverCardTrigger>
             <HoverCardContent>
-              <div className="flex gap-4">
+              <div className="flex items-center gap-4">
                 <Image
                   src={imgSrc}
                   alt={`${title}-logo`}
-                  width={50}
-                  height={50}
                   priority={true}
+                  className="h-8 w-8"
                 />
                 <div className="space-y-1">
                   {/* <h4 className="text-sm font-semibold">{title}</h4> */}
