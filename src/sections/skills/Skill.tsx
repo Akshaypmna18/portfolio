@@ -56,7 +56,7 @@ function Skill() {
                   alt={`${title}-logo`}
                   width={50}
                   height={50}
-                  priority
+                  priority={true}
                 />
                 <div className="space-y-1">
                   {/* <h4 className="text-sm font-semibold">{title}</h4> */}
