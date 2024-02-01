@@ -6,7 +6,7 @@ type Props = {
 
 function SectionHeading({ children }: Props) {
   return (
-    <h2 className="capitalize text-3xl font-bold mb-8 text-primaryColor">
+    <h2 className="capitalize text-3xl font-bold mb-5 text-primaryColor">
       {children}
     </h2>
   );

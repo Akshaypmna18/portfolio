@@ -37,7 +37,7 @@ function Project({
       transition={{ delay: 0.15 }}
       className="group mx-auto rounded bg-secondary border border-black/10 max-w-[40rem] p-4 space-y-4 text-start overflow-hidden relative flex flex-wrap"
     >
-      <div className="max-w-[50%] group-even:ml-[50%] space-y-2">
+      <div className="sm:max-w-[50%] sm:group-even:ml-[50%] space-y-2">
         <h3 className="text-2xl font-semibold flex items-center gap-2">
           <a
             href={demoLink}
@@ -67,7 +67,8 @@ function Project({
         src={imageUrl}
         alt="Project I worked on"
         quality={95}
-        className="absolute bottom-0 -right-40 group-even:right-[initial] group-even:-left-40 rounded shadow transition max-w-[25rem] group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
+        className="sm:absolute sm:bottom-0 sm:-right-40 sm:group-even:right-[initial] sm:group-even:-left-40 sm:rounded sm:shadow sm:transition sm:max-w-[25rem] sm:group-hover:scale-[1.04] sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2
+        "
       />
     </motion.section>
   );

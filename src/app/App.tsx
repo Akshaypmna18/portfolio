@@ -13,14 +13,14 @@ export default function App() {
   return (
     <>
       <Header />
-      <main className="flex flex-col max-w-[50rem] mx-auto pt-[5rem] gap-y-[10rem] py-4 text-center">
+      <main className="flex flex-col max-w-[50rem] mx-auto pt-[5rem] gap-y-[10rem] px-4 text-center">
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
       <ArrowUp />
     </>
   );

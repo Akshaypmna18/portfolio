@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="text-center mb-4 mt-12">
       <small>
         &copy; {new Date().getFullYear()} · Designed and Developed by{" "}
         <big>
