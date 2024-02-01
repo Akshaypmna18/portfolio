@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   HoverCard,
   HoverCardContent,
@@ -44,7 +43,7 @@ function Skill() {
                   initial="initial"
                   whileInView="animate"
                   custom={index}
-                  className="cursor-default"
+                  className="cursor-default hover:text-primaryColor"
                 >
                   {title}
                 </motion.li>
@@ -52,15 +51,13 @@ function Skill() {
             </HoverCardTrigger>
             <HoverCardContent>
               <div className="flex gap-4">
-                <Avatar>
-                  <Image
-                    src={imgSrc}
-                    alt={`${title}-logo`}
-                    width={50}
-                    height={50}
-                  />
-                  <AvatarFallback>Logo</AvatarFallback>
-                </Avatar>
+                <Image
+                  src={imgSrc}
+                  alt={`${title}-logo`}
+                  width={50}
+                  height={50}
+                  priority
+                />
                 <div className="space-y-1">
                   {/* <h4 className="text-sm font-semibold">{title}</h4> */}
                   <p className="text-sm">{desc}</p>

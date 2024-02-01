@@ -18,18 +18,23 @@ function About() {
       <SectionHeading>About me</SectionHeading>
       <p>
         After earning my bachelor's degree in
-        <span className="font-medium"> Computer Applications</span>, I decided
-        to pursue my passion for programming. I am a self-taught front-end
-        developer with a love for{" "}
-        <span className="italic"> problem-solving</span>,{" "}
-        <span className="italic">design</span>, and{" "}
-        <span className="italic">debugging</span>, with a core stack that
-        includes <span className="font-medium">React</span>,{" "}
-        <span className="font-medium">Next.js</span>,{" "}
-        <span className="font-medium">Zustand</span>, and{" "}
-        <span className="font-medium">Tailwind CSS</span>. I'm also familiar
-        with <span className="font-medium">TypeScript</span> and{" "}
-        <span className="font-medium">Redux</span>.
+        <span className="font-medium text-primaryColor">
+          {" "}
+          Computer Applications
+        </span>
+        , I decided to pursue my passion for programming. I am a self-taught
+        front-end developer with a love for{" "}
+        <span className="italic text-primaryColor"> problem-solving</span>,{" "}
+        <span className="italic text-primaryColor">design</span>, and{" "}
+        <span className="italic text-primaryColor">debugging</span>, with a core
+        stack that includes{" "}
+        <span className="font-medium text-primaryColor">React</span>,{" "}
+        <span className="font-medium text-primaryColor">Next.js</span>,{" "}
+        <span className="font-medium text-primaryColor">Zustand</span>, and{" "}
+        <span className="font-medium text-primaryColor">Tailwind CSS</span>. I'm
+        also familiar with{" "}
+        <span className="font-medium text-primaryColor">TypeScript</span> and{" "}
+        <span className="font-medium text-primaryColor">Redux</span>.
       </p>
       <br />
       <p>
