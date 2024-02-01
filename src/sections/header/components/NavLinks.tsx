@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import useActiveSectionContext from "@/features/scrollHandlers/useActiveSectionContext";
 import { LinksType } from "@/lib/types";
 
@@ -7,12 +6,12 @@ function NavLinks({ hash, name }: LinksType) {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   return (
-    <Link
+    <a
       href={hash}
       className={`${
         activeSection === name
           ? "font-semibold transition relative"
-          : "hover:text-primaryColor"
+          : "hover:text-primaryColor "
       }`}
       onClick={() => {
         setActiveSection(name);
@@ -28,7 +27,7 @@ function NavLinks({ hash, name }: LinksType) {
             : ""
         }`}
       ></span>
-    </Link>
+    </a>
   );
 }
 
