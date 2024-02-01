@@ -6,7 +6,7 @@ function Footer() {
       <small>
         &copy; {new Date().getFullYear()} · Designed and Developed by{" "}
         <big>
-          <i>Akshay K </i>
+          <i className="text-primaryColor">Akshay K </i>
         </big>
         · All Rights Reserved
       </small>
