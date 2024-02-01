@@ -42,7 +42,7 @@ function Project({
           <a
             href={demoLink}
             target={demoLink === "#" ? "" : "_blank"}
-            className="hover:underline"
+            className="hover:text-primaryColor underline"
           >
             {title}
           </a>
