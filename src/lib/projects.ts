@@ -1,4 +1,5 @@
-import notes from "@/assets/projects/notes.png";
+import notes from "@/assets/projects/notes.jpg";
+import portfolio from "@/assets/projects/portfolio.jpg";
 
 const projectsData = [
   {
@@ -13,7 +14,7 @@ const projectsData = [
       "ShadcnUI",
       "Tailwind",
     ],
-    imageUrl: notes,
+    imageUrl: portfolio,
     demoLink: "#",
     codeLink: "https://github.com/Akshaypmna18/portfolio",
   },
