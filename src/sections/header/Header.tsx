@@ -9,7 +9,7 @@ function Header() {
   // const { scrollYProgress } = useScroll();
   // const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
   return (
-    <header className="sticky top-0 z-10 flex justify-between items-center bg-background p-4 xl:max-w-[80%] mx-auto">
+    <header className="sticky top-0 z-10 flex justify-between items-center bg-background sm:bg-transparent backdrop-blur-md p-4 xl:max-w-[80%] mx-auto">
       <div className="flex gap-2 items-center">
         {/* <motion.span style={{ scale }}>hello</motion.span> */}
         <motion.h2
