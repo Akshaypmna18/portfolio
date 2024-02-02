@@ -15,7 +15,7 @@ function Buttons() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <motion.div
-      className="space-x-2"
+      className="flex flex-wrap gap-2 justify-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
