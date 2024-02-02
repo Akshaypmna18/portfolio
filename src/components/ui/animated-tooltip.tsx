@@ -39,12 +39,33 @@ export const AnimatedTooltip = ({
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
   };
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index,
+      },
+    }),
+  };
+
   return (
     <>
       {items.map(({ title, imgSrc, value }, idx) => (
-        <div
-          className="-mr-4  relative group"
+        <motion.div
           key={idx}
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          custom={idx}
+          viewport={{
+            once: true,
+          }}
+          className="-mr-4  relative group"
           onMouseEnter={() => setHoveredIndex(imgSrc)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -92,7 +113,7 @@ export const AnimatedTooltip = ({
             alt={title}
             className="object-fit m-4 !p-0 object-top h-14 w-14  group-hover:scale-105 group-hover:z-30   relative transition duration-500"
           />
-        </div>
+        </motion.div>
       ))}
     </>
   );

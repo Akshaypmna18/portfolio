@@ -1,12 +1,20 @@
 import { ArrowDownIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 
 function ScrollDown() {
   const { theme, resolvedTheme } = useTheme();
   const isDarkMode = theme === "dark" || resolvedTheme === "dark";
   const strokeColor = isDarkMode ? "#fff" : "#000";
   return (
-    <div className="flex justify-center gap-2 items-center pt-8">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.1,
+      }}
+      className="flex justify-center gap-2 items-center pt-8"
+    >
       <svg
         width="32px"
         height="32px"
@@ -43,7 +51,7 @@ function ScrollDown() {
       <span>
         <ArrowDownIcon className="animate-bounce transition" />
       </span>
-    </div>
+    </motion.div>
   );
 }
 
