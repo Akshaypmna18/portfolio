@@ -13,7 +13,7 @@ import Rating from "@mui/material/Rating";
 export const AnimatedTooltip = ({
   items,
 }: {
-  items: {
+  items: readonly {
     title: string;
     imgSrc: StaticImageData;
     value: number;
