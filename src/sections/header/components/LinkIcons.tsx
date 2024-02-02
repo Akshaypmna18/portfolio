@@ -5,7 +5,8 @@ import useActiveSectionContext from "@/features/scrollHandlers/useActiveSectionC
 import { motion } from "framer-motion";
 
 function LinkIcons({ className }: { className?: string }) {
-  const iconsClass = "h-5 w-5 hover:text-primaryColor" as const;
+  const iconsClass =
+    "h-[calc(1.25rem+1vw)] sm:h-[1.2rem] sm:w-[1.2rem] w-[calc(1.25rem+1vw)] hover:text-primaryColor" as const;
   const { activeSection } = useActiveSectionContext();
   return (
     <motion.div
@@ -17,7 +18,7 @@ function LinkIcons({ className }: { className?: string }) {
       className={`mt-1 flex items-center flex-wrap gap-4 ${className}`}
     >
       <div
-        className={`flex items-center flex-wrap gap-4 -mr-2 ${
+        className={`flex items-center flex-wrap gap-4 -mr-2 sm:-mr-[0.65rem] ${
           activeSection === "Home" ? "hidden" : ""
         }`}
       >
@@ -28,7 +29,7 @@ function LinkIcons({ className }: { className?: string }) {
           <LinkedInLogoIcon className={iconsClass} />
         </a>
       </div>
-      <Theme />
+      <Theme className={iconsClass} />
     </motion.div>
   );
 }

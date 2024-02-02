@@ -24,7 +24,7 @@ function SheetShadcn() {
       >
         <ul className="flex flex-col gap-y-4 mt-12">
           {links.map(({ hash, name }: LinksType) => (
-            <SheetClose key={hash} className="text-start">
+            <SheetClose key={hash} className="text-start text-[calc(1rem+1vw)]">
               <li>
                 <NavLinks hash={hash} name={name} />
               </li>

@@ -11,7 +11,7 @@ function NavLinks({ hash, name }: LinksType) {
       className={`${
         activeSection === name
           ? "font-semibold transition relative"
-          : "hover:text-primaryColor "
+          : "hover:text-primaryColor block"
       }`}
       onClick={() => {
         setActiveSection(name);
