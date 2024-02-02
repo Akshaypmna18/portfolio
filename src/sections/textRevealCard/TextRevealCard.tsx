@@ -7,7 +7,7 @@ import {
 
 function TextRevealCard() {
   return (
-    <section className="place-items-center hidden md:grid">
+    <section className="place-items-center hidden lg:grid">
       <TextReveal
         text="You know the business"
         revealText="I know the chemistry "

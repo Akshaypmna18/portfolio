@@ -35,6 +35,9 @@ function Project({
         opacity: opacityProgess,
       }}
       transition={{ delay: 0.15 }}
+      viewport={{
+        once: true,
+      }}
       className="group mx-auto rounded bg-secondary border border-black/10 max-w-[40rem] p-4 space-y-4 text-start overflow-hidden relative flex flex-wrap"
     >
       <div className="sm:max-w-[50%] sm:group-even:ml-[50%] space-y-2">

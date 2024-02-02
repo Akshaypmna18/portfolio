@@ -43,6 +43,9 @@ function Skill() {
                   initial="initial"
                   whileInView="animate"
                   custom={index}
+                  viewport={{
+                    once: true,
+                  }}
                   className="cursor-default hover:text-primaryColor"
                 >
                   {title}

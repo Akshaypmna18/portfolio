@@ -13,6 +13,9 @@ function Contact() {
       initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
+      viewport={{
+        once: true,
+      }}
       id="contact"
       className="scroll-mt-28 space-y-4"
       ref={ref}
