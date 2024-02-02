@@ -15,108 +15,90 @@ import firebase from "@/assets/skill-icons/firebase.png";
 import figma from "@/assets/skill-icons/figma.png";
 import git from "@/assets/skill-icons/git.png";
 import vitest from "@/assets/skill-icons/vitest.png";
-import JSXStyle from "styled-jsx/style";
 
 const skills = [
   {
-    title: "HTML",
-    desc: "Hyper Text Markup Language",
+    title: "HTML 5",
     imgSrc: html5,
     value: 4.5,
   },
   {
-    title: "CSS",
-    desc: "Cascading Style Sheet",
+    title: "CSS 3",
     imgSrc: css3,
     value: 4.5,
   },
   {
-    title: "JS",
-    desc: "JavaScript",
+    title: "JavaScript",
     imgSrc: js,
     value: 3.5,
   },
   {
-    title: "TS",
-    desc: "TypeScript",
+    title: "TypeScript",
     imgSrc: ts,
     value: 3.5,
   },
   {
-    title: "React",
-    desc: "React 18",
+    title: "React JS",
     imgSrc: react,
     value: 4,
   },
   {
-    title: "Next.js",
-    desc: "Next.js 14",
+    title: "Next.js 14",
     imgSrc: nextjs,
     value: 3.5,
   },
   {
     title: "Zustand",
-    desc: "Zustand",
     imgSrc: zustand,
     value: 4,
   },
   {
     title: "Redux",
-    desc: "Redux",
     imgSrc: redux,
     value: 3,
   },
   {
     title: "Storybook",
-    desc: "Storybook",
     imgSrc: storybook,
     value: 4,
   },
   {
-    title: "Testing Library",
-    desc: "React Testing Library",
+    title: "React Testing Library",
     imgSrc: testingLibrary,
     value: 3.5,
   },
   {
     title: "Vitest",
-    desc: "Vitest",
     imgSrc: vitest,
     value: 4,
   },
   {
     title: "Git",
-    desc: "Git",
     imgSrc: git,
     value: 4.5,
   },
   {
-    title: "Tailwind",
-    desc: "Tailwind CSS v3",
+    title: "Tailwind v3",
     imgSrc: tailwind,
     value: 4.5,
   },
   {
-    title: "Bootstrap",
-    desc: "Bootstrap v5",
+    title: "Bootstrap v5",
     imgSrc: bootstrap,
     value: 4.5,
   },
   {
     title: "SASS",
-    desc: "SASS",
     imgSrc: sass,
     value: 4,
   },
   {
     title: "Firebase",
-    desc: "Firebase",
     imgSrc: firebase,
     value: 3.5,
   },
   {
     title: "Figma",
-    desc: "Figma",
     imgSrc: figma,
     value: 3,
   },
