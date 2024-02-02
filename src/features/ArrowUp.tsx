@@ -12,7 +12,7 @@ function ArrowUp() {
   return (
     <Button
       variant="secondary"
-      className={`rounded-full p-0 w-8 h-8 fixed bottom-8 right-8 hover:text-primaryColor ${
+      className={`rounded-full p-4 h-[2.5rem] w-[2.5rem] fixed bottom-8 right-8 hover:text-primaryColor ${
         activeSection === "Home" ? "hidden" : ""
       }`}
     >
@@ -23,7 +23,7 @@ function ArrowUp() {
           setTimeOfLastClick(Date.now());
         }}
       >
-        <ArrowUpIcon />
+        <ArrowUpIcon className="h-6 w-6" />
       </Link>
     </Button>
   );
