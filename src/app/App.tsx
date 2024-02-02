@@ -6,6 +6,7 @@ import Home from "@/sections/home";
 import About from "@/sections/about";
 import Contact from "@/sections/contact";
 import Footer from "@/sections/footer";
+import TextRevealCard from "@/sections/textRevealCard";
 import ArrowUp from "@/features/ArrowUp";
 import "./style.css";
 
@@ -18,6 +19,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <TextRevealCard />
         <Contact />
       </main>
       <Footer />
