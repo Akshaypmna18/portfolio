@@ -1,17 +1,29 @@
 "use client";
 
 import NavBar from "./components/NavBar";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion, MotionValue } from "framer-motion";
 import LinkIcons from "./components/LinkIcons";
 import SheetShadcn from "./components/SheetShadcn";
 
-function Header() {
-  // const { scrollYProgress } = useScroll();
-  // const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+type Props = {
+  scrollYProgress: MotionValue<number>;
+};
+
+function Header({ scrollYProgress }: Props) {
   return (
     <header className="sticky top-0 z-10 flex justify-between items-center bg-background sm:bg-transparent backdrop-blur-md p-4 xl:max-w-[80%] mx-auto">
-      <div className="flex gap-2 items-center">
-        {/* <motion.span style={{ scale }}>hello</motion.span> */}
+      <div className="flex gap-1 items-center">
+        <svg id="progress" width="40" height="40" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+          <motion.circle
+            cx="50"
+            cy="50"
+            r="30"
+            pathLength="1"
+            className="indicator"
+            style={{ pathLength: scrollYProgress }}
+          />
+        </svg>
         <motion.h2
           initial={{ y: -200, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

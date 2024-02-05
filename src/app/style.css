@@ -1,8 +1,31 @@
+:root {
+  --primaryColor: #b8860b;
+}
+
 body::-webkit-scrollbar {
   width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #b8860b;
+  background-color: var(--primaryColor);
+}
+
+#progress {
+  transform: rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+.bg {
+  stroke: var(--primaryColor);
+  opacity: 0.3;
+}
+
+#progress .indicator {
+  stroke: var(--primaryColor);
 }
