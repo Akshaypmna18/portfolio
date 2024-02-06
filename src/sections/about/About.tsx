@@ -20,7 +20,8 @@ function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p>
-        After earning my bachelor's degree in
+        I'm from Perinthalmanna, Kerala, India. After earning my bachelor's
+        degree in
         <span className="font-medium text-primaryColor">
           {" "}
           Computer Applications
