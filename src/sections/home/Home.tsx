@@ -6,6 +6,7 @@ import Intro from "./components/Intro";
 import Buttons from "./components/Buttons";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 import ScrollDown from "./components/ScrollDown";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 function Home() {
   const ref = useIsVisible("Home", 0.5);
@@ -15,6 +16,7 @@ function Home() {
       <Intro />
       <Buttons />
       <ScrollDown />
+      <BackgroundBeams />
     </section>
   );
 }
