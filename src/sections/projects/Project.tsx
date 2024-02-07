@@ -6,6 +6,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { CodeIcon } from "@radix-ui/react-icons";
+import { Tooltip } from "@mui/material";
 
 type Props = (typeof projectsData)[number];
 
@@ -42,20 +43,24 @@ function Project({
     >
       <div className="sm:max-w-[50%] sm:group-even:ml-[50%] space-y-2">
         <h3 className="text-2xl font-semibold flex items-center gap-2">
-          <a
-            href={demoLink}
-            target={demoLink === "#" ? "" : "_blank"}
-            className="hover:text-primaryColor underline"
-          >
-            {title}
-          </a>
-          <a
-            href={codeLink}
-            target="_blank"
-            className="hover:text-primaryColor"
-          >
-            <CodeIcon className="h-6 w-6" />
-          </a>
+          <Tooltip placement="top" title="Open project in a new tab">
+            <a
+              href={demoLink}
+              target={demoLink === "#" ? "" : "_blank"}
+              className="hover:text-primaryColor underline"
+            >
+              {title}
+            </a>
+          </Tooltip>
+          <Tooltip placement="top" title="Open code in a new tab">
+            <a
+              href={codeLink}
+              target="_blank"
+              className="hover:text-primaryColor"
+            >
+              <CodeIcon className="h-6 w-6" />
+            </a>
+          </Tooltip>
         </h3>
         <p>{description}</p>
         <ul className="flex flex-wrap gap-2">
