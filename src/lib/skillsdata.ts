@@ -15,6 +15,7 @@ import firebase from "@/assets/skill-icons/firebase.png";
 import figma from "@/assets/skill-icons/figma.png";
 import git from "@/assets/skill-icons/git.png";
 import vitest from "@/assets/skill-icons/vitest.png";
+import jQuery from "@/assets/skill-icons/jQuery.png";
 
 const skills = [
   {
@@ -58,6 +59,11 @@ const skills = [
     value: 3,
   },
   {
+    title: "Tailwind v3",
+    imgSrc: tailwind,
+    value: 4.5,
+  },
+  {
     title: "Storybook",
     imgSrc: storybook,
     value: 4,
@@ -78,11 +84,6 @@ const skills = [
     value: 4.5,
   },
   {
-    title: "Tailwind v3",
-    imgSrc: tailwind,
-    value: 4.5,
-  },
-  {
     title: "Bootstrap v5",
     imgSrc: bootstrap,
     value: 4.5,
@@ -95,6 +96,11 @@ const skills = [
   {
     title: "Firebase",
     imgSrc: firebase,
+    value: 3.5,
+  },
+  {
+    title: "JQuery",
+    imgSrc: jQuery,
     value: 3.5,
   },
   {
