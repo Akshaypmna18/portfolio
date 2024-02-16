@@ -8,7 +8,6 @@ import {
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { resumeLink } from "@/lib/urls";
 import useActiveSectionContext from "@/features/scrollHandlers/useActiveSectionContext";
 
 function Buttons() {
@@ -43,7 +42,11 @@ function Buttons() {
         asChild
         className="rounded-full md:hover:text-primaryColor md:focus:text-primaryColor "
       >
-        <a href={resumeLink} download>
+        <a
+          href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay-K%C2%B7Front-End-Dev.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
           Resume <FileTextIcon className="ml-1" />
         </a>
       </Button>
