@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import meta from "@/lib/metadata";
+import ThemeProvider from "@/features/theme/ThemeProvider";
 
 // const poppins = Poppins({
 //   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -21,7 +22,15 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${inter.className} scroll-smooth`}
       >
-        {children}
+        {" "}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
