@@ -8,9 +8,9 @@ const projectsData = [
       "A personal portfolio showcasing my journey and expertise as a front-end developer. Explore my projects, skills, and experience in one central hub.",
     tags: [
       "Next.js",
-      "React",
       "TypeScript",
       "Framer-motion",
+      "Aceternity UI",
       "ShadcnUI",
       "Tailwind",
     ],
@@ -23,7 +23,7 @@ const projectsData = [
     description:
       "A user-friendly notes app that allows you to write, edit, and organize your notes easily. The notes are stored in Firebase Cloud for convenient access.",
     tags: [
-      "React",
+      "React JS",
       "JavaScript",
       "Firebase",
       "Zustand",
