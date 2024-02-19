@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import img1 from "@/assets/projects/hotelier-pro/bookingpage.png";
 import img2 from "@/assets/projects/hotelier-pro/contact-section.png";
@@ -12,10 +13,11 @@ import img9 from "@/assets/projects/hotelier-pro/pricing-section.png";
 const images = [img1, img2, img3, img4, img5, img6, img8, img9];
 
 function HotelierPro() {
+  const [loaded, setLoaded] = useState(false);
   return (
-    <main className="xl:px-[20svh] min-h-[100svh] pt-12 pb-4 px-4 text-center space-y-4">
-      <h1 className="text-3xl font-bold">Hotelier Pro</h1>
-      <p className="text-start">
+    <main className="xl:px-[20svh] min-h-[100svh] pt-12 pb-4 px-4 space-y-4">
+      <h1 className="text-3xl font-bold text-center">Hotelier Pro</h1>
+      <p>
         I played a crucial role in the HotelierPro project as part of the
         Woxware team, contributing significantly to the development of a
         user-friendly platform that streamlines hotel operations and management
@@ -29,7 +31,8 @@ function HotelierPro() {
         components like forms and tables, improving user interaction and
         optimizing dashboard functionality. <br />
         <br />
-        Below are some pages, figma designs, stories related to the project.
+        Below are some pages, figma designs, stories[storybook files] related to
+        the project.
       </p>
       <div className="flex flex-wrap gap-4 justify-center py-3">
         {images.map((img, key) => (
@@ -39,7 +42,8 @@ function HotelierPro() {
             alt={"sampleImage"}
             width={300}
             height={300}
-            className="cursor-pointer"
+            onLoad={() => setLoaded(true)}
+            className={`cursor-pointer ${loaded ? "blur-none" : "blur-sm"}`}
           />
         ))}
       </div>
