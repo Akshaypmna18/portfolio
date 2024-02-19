@@ -22,14 +22,7 @@ const projectsData = [
     title: "Aks Notes",
     description:
       "A user-friendly notes app that allows you to write, edit, and organize your notes easily. The notes are stored in Firebase Cloud for convenient access.",
-    tags: [
-      "React JS",
-      "JavaScript",
-      "Firebase",
-      "Zustand",
-      "ShadcnUI",
-      "Tailwind",
-    ],
+    tags: ["React JS", "Zustand", "Firebase", "ShadcnUI", "Tailwind"],
     imageUrl: notes,
     demoLink: "https://aks-notes-app.vercel.app/",
     codeLink: "https://github.com/Akshaypmna18/notes-app",
