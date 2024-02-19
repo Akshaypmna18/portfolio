@@ -12,6 +12,7 @@ import TextRevealCard from "@/sections/textRevealCard";
 import ArrowUp from "@/features/ArrowUp";
 import "./style.css";
 import { useScroll } from "framer-motion";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export default function App() {
   const ref = useRef(null);
@@ -29,6 +30,7 @@ export default function App() {
         <Projects />
         <TextRevealCard />
         <Contact />
+        <BackgroundBeams />
       </main>
       <Footer />
       <ArrowUp />

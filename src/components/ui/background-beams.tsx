@@ -59,12 +59,12 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "absolute  h-full w-full inset-0  [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center -z-10",
+        "absolute   inset-0  [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center -z-10",
         className
       )}
     >
       <svg
-        className=" z-0 h-full w-full pointer-events-none absolute "
+        className=" z-0  pointer-events-none absolute "
         width="100%"
         height="100%"
         viewBox="0 0 696 316"
