@@ -1,0 +1,50 @@
+import React from "react";
+import Image from "next/image";
+import img1 from "@/assets/projects/hotelier-pro/bookingpage.png";
+import img2 from "@/assets/projects/hotelier-pro/contact-section.png";
+import img3 from "@/assets/projects/hotelier-pro/features-section.png";
+import img4 from "@/assets/projects/hotelier-pro/footer.png";
+import img5 from "@/assets/projects/hotelier-pro/forms.png";
+import img6 from "@/assets/projects/hotelier-pro/homepage.png";
+import img8 from "@/assets/projects/hotelier-pro/landing-page.png";
+import img9 from "@/assets/projects/hotelier-pro/pricing-section.png";
+
+const images = [img1, img2, img3, img4, img5, img6, img8, img9];
+
+function HotelierPro() {
+  return (
+    <main className="xl:px-[20svh] min-h-[100svh] pt-12 pb-4 px-4 text-center space-y-4">
+      <h1 className="text-3xl font-bold">Hotelier Pro</h1>
+      <p className="text-start">
+        I played a crucial role in the HotelierPro project as part of the
+        Woxware team, contributing significantly to the development of a
+        user-friendly platform that streamlines hotel operations and management
+        tasks.
+        <br />
+        <br /> With a focus on frontend development, I implemented Storybook for
+        systematic UI component testing, enhancing code stability. Additionally,
+        I utilized Vitest and React Testing Library to ensure the reliability of
+        functions and components. Employing technologies such as React Hook
+        Forms, React Table, React Scheduler, and Zod schemas, I designed
+        components like forms and tables, improving user interaction and
+        optimizing dashboard functionality. <br />
+        <br />
+        Below are some pages, figma designs, stories related to the project.
+      </p>
+      <div className="flex flex-wrap gap-4 justify-center py-3">
+        {images.map((img, key) => (
+          <Image
+            key={key}
+            src={img}
+            alt={"sampleImage"}
+            width={300}
+            height={300}
+            className="cursor-pointer"
+          />
+        ))}
+      </div>
+    </main>
+  );
+}
+
+export default HotelierPro;
