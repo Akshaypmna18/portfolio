@@ -56,7 +56,7 @@ function Project({
             <a
               href={codeLink}
               target="_blank"
-              className="hover:text-primaryColor"
+              className={`${codeLink ? "hover:text-primaryColor" : "hidden"}`}
             >
               <CodeIcon className="h-6 w-6" />
             </a>

@@ -1,7 +1,33 @@
 import notes from "@/assets/projects/notes.jpg";
 import portfolio from "@/assets/projects/portfolio.jpg";
+import hotelierPro from "@/assets/projects/hotelier-pro/landing-page.png";
+import { StaticImageData } from "next/image";
 
-const projectsData = [
+type ProjectData = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  demoLink: string;
+  codeLink?: string;
+};
+
+const projectsData: ProjectData[] = [
+  {
+    title: "HotelierPro",
+    description:
+      "Revolutionizing hotel management. Easy setup in 10 minutes, user-friendly operation. Simplify, streamline, expand effortlessly.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Zustand",
+      "Storybook",
+      "Vitest",
+      "React Testing Library",
+    ],
+    imageUrl: hotelierPro,
+    demoLink: "https://aks-dev.vercel.app/hotelier-pro",
+  },
   {
     title: "Portfolio Website",
     description:
