@@ -1,6 +1,7 @@
 import notes from "@/assets/projects/notes.jpg";
 import portfolio from "@/assets/projects/portfolio.jpg";
 import hotelierPro from "@/assets/projects/hotelier-pro/landing-page.png";
+import vehicleFleet from "@/assets/projects/car-rental/vehicle-fleet-section.png";
 import { StaticImageData } from "next/image";
 
 type ProjectData = {
@@ -43,6 +44,14 @@ const projectsData: ProjectData[] = [
     imageUrl: portfolio,
     demoLink: "#",
     codeLink: "https://github.com/Akshaypmna18/portfolio",
+  },
+  {
+    title: "Car Rental Web App",
+    description:
+      "Revolutionizing hotel management. Easy setup in 10 minutes, user-friendly operation. Simplify, streamline, expand effortlessly.",
+    tags: ["React JS", "Axios", "Zustand", "Bootstrap 5"],
+    imageUrl: vehicleFleet,
+    demoLink: "https://aks-dev.vercel.app/car-rental",
   },
   {
     title: "Aks Notes",

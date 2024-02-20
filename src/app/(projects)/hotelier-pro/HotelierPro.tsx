@@ -32,8 +32,9 @@ function HotelierPro() {
         designed components like forms and tables, improving user interaction
         and optimizing dashboard functionality. <br />
         <br />
-        Below are some pages, figma designs, stories[storybook files] related to
-        the project.
+        Due to various reasons, I am unable to share the code, and the website
+        has not been hosted yet. Below are some pages, figma designs,
+        stories[storybook files] related to the project.
       </p>
       <div className="project-div">
         {images.map((img, key) => (
