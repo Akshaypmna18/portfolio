@@ -73,4 +73,16 @@
   body {
     @apply bg-background text-foreground;
   }
+  .project-main {
+    @apply xl:px-[20svh] min-h-[100svh] pt-12 pb-4 px-4 space-y-4;
+  }
+  .project-h1 {
+    @apply text-3xl font-bold text-center;
+  }
+  .project-span {
+    @apply font-semibold tracking-wider;
+  }
+  .project-div {
+    @apply flex flex-wrap gap-4 justify-center py-3;
+  }
 }
