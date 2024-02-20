@@ -40,9 +40,10 @@ function HotelierPro() {
             key={key}
             src={img}
             alt={"sampleImage"}
-            width={300}
-            height={300}
+            width={1300}
+            height={800}
             onLoad={() => setLoaded(true)}
+            quality={100}
             className={`cursor-pointer ${loaded ? "blur-none" : "blur-sm"}`}
           />
         ))}
