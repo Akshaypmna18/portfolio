@@ -13,7 +13,7 @@ function ProjectImage({ key, src }: { key: number; src: any }) {
       height={800}
       onLoad={() => setLoaded(true)}
       quality={100}
-      className={`cursor-pointer ${loaded ? "blur-none" : "blur-sm"}`}
+      className={`${loaded ? "blur-none" : "blur-sm"}`}
     />
   );
 }
