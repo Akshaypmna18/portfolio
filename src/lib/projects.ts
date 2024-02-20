@@ -48,7 +48,7 @@ const projectsData: ProjectData[] = [
   {
     title: "Car Rental Web App",
     description:
-      "Revolutionizing hotel management. Easy setup in 10 minutes, user-friendly operation. Simplify, streamline, expand effortlessly.",
+      "Drive into freedom: Rent your perfect car in minutes. Seamless booking, diverse fleet, hassle-free experience.",
     tags: ["React JS", "Axios", "Zustand", "Bootstrap 5"],
     imageUrl: vehicleFleet,
     demoLink: "https://aks-dev.vercel.app/car-rental",
