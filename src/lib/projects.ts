@@ -1,5 +1,5 @@
-import notes from "@/assets/projects/notes.jpg";
-import portfolio from "@/assets/projects/portfolio.jpg";
+import qryptell from "@/assets/projects/qryptell.png";
+import portfolio from "@/assets/projects/portfolio.png";
 import hotelierPro from "@/assets/projects/hotelier-pro/landing-page.png";
 import vehicleFleet from "@/assets/projects/car-rental/vehicle-fleet-section.png";
 import { StaticImageData } from "next/image";
@@ -54,13 +54,13 @@ const projectsData: ProjectData[] = [
     demoLink: "https://aks-dev.vercel.app/car-rental",
   },
   {
-    title: "Aks Notes",
+    title: "Qryptell",
     description:
-      "A user-friendly notes app that allows you to write, edit, and organize your notes easily. The notes are stored in Firebase Cloud for convenient access.",
-    tags: ["React JS", "Zustand", "Firebase", "ShadcnUI", "Tailwind CSS"],
-    imageUrl: notes,
-    demoLink: "https://aks-notes-app.vercel.app/",
-    codeLink: "https://github.com/Akshaypmna18/notes-app",
+      "A cutting-edge Discord clone and social media platform, offering seamless communication and engaging experiences.",
+    tags: ["Next.js", "Typescript", "Zustand", "ShadcnUI", "Tailwind CSS"],
+    imageUrl: qryptell,
+    demoLink: "https://aks-dev.vercel.app/qryptell",
+    codeLink: "https://github.com/qryptell",
   },
 ] as const;
 
