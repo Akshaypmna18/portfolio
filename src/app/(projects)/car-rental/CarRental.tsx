@@ -15,9 +15,15 @@ function CarRental() {
         I played a key role in creating an{" "}
         <span className="project-span"> online Car Rental Website </span> with
         the <span className="project-span"> Woxare </span> team, taking
-        inspiration from the stylish LuxeDrive QodeInteractive design. Working
-        closely with other developers, I focused on making a user-friendly
-        interface using React and Bootstrap 5. <br />
+        inspiration from the stylish{" "}
+        <a
+          href="https://luxedrive.qodeinteractive.com"
+          className="underline hover:text-blue-600"
+        >
+          LuxeDrive QodeInteractive
+        </a>{" "}
+        design. Working closely with other developers, I focused on making a
+        user-friendly interface using React and Bootstrap 5. <br />
         <br />
         My main goal was to make sure users enjoy using the website, and I aimed
         to reduce the number of people leaving the site after visiting. In the
