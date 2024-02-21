@@ -38,7 +38,7 @@ function About() {
         <span className="font-medium text-primaryColor">Tailwind CSS</span>. I'm
         also familiar with{" "}
         <span className="font-medium text-primaryColor">TypeScript</span> and{" "}
-        <span className="font-medium text-primaryColor">Redux</span>.
+        <span className="font-medium text-primaryColor">Redux Toolkit</span>.
       </p>
       <br />
       <p>

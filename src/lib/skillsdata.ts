@@ -54,7 +54,7 @@ const skills = [
     value: 4,
   },
   {
-    title: "Redux",
+    title: "Redux Toolkit",
     imgSrc: redux,
     value: 3,
   },
