@@ -41,7 +41,7 @@ function Buttons() {
 
       <Button variant="secondary" asChild className={buttonClassName}>
         <a
-          href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay-K%C2%B7Front-End-Dev.pdf"
+          href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay_K%C2%B7Front_End_Dev.pdf"
           target="_blank"
           rel="noreferrer"
         >
