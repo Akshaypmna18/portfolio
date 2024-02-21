@@ -1,8 +1,9 @@
 import React from "react";
 import img1 from "@/assets/projects/qryptell/chat-page.png";
+import img2 from "@/assets/projects/qryptell/profile-settings-page.png";
 import ProjectImage from "@/components/ProjectImage";
 
-const images = [img1];
+const images = [img1, img2];
 
 function CarRental() {
   return (
