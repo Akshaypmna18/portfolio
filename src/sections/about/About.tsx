@@ -42,8 +42,11 @@ function About() {
       </p>
       <br />
       <p>
-        Currently, I am actively seeking frontend roles where I can contribute
-        my skills and expertise. Outside of coding, I enjoy{" "}
+        Collaborating with different teams of great developers on both open
+        source and private projects has increased my confidence and improved my
+        technical and collaborative skills. Currently, I am actively seeking
+        frontend roles where I can contribute my skills and expertise. Outside
+        of coding, I enjoy{" "}
         <span className="italic">watching movies and series</span>,{" "}
         <span className="italic">playing games</span>, and spending quality time
         with <span className="italic">friends and family</span>. I'm always
