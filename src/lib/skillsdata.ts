@@ -16,6 +16,7 @@ import figma from "@/assets/skill-icons/figma.png";
 import git from "@/assets/skill-icons/git.png";
 import vitest from "@/assets/skill-icons/vitest.png";
 import jQuery from "@/assets/skill-icons/jQuery.png";
+import reactQuery from "@/assets/skill-icons/react-query.png";
 
 const skills = [
   {
@@ -82,6 +83,11 @@ const skills = [
     title: "Git",
     imgSrc: git,
     value: 4.5,
+  },
+  {
+    title: "React Query",
+    imgSrc: reactQuery,
+    value: 3,
   },
   {
     title: "Bootstrap v5",
