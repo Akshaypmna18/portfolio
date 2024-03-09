@@ -3,4 +3,4 @@ export const metadata = {
   description: "Private Contribution",
 };
 
-export { default } from "./HotelierPro";
+export { default } from "@/sections/projects/main/hotelierPro";

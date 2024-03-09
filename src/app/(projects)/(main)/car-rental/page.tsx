@@ -6,4 +6,4 @@ export const metadata = {
   },
 };
 
-export { default } from "./CarRental";
+export { default } from "@/sections/projects/main/carRental";
