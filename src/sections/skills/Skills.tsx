@@ -1,7 +1,5 @@
 "use client";
 
-import SectionHeading from "@/components/SectionHeading";
-import React from "react";
 import Skill from "./Skill";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 import { motion } from "framer-motion";
@@ -16,7 +14,7 @@ function Skills() {
       ref={ref}
       className="scroll-mt-28"
     >
-      <SectionHeading>Skills</SectionHeading>
+      <h2 className="section-heading">Skills</h2>
       <Skill />
     </motion.section>
   );

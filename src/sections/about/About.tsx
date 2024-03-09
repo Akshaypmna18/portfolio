@@ -1,6 +1,4 @@
 "use client";
-import SectionHeading from "@/components/SectionHeading";
-import React from "react";
 import { motion } from "framer-motion";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 
@@ -18,7 +16,7 @@ function About() {
       className="scroll-mt-36"
       ref={ref}
     >
-      <SectionHeading>About me</SectionHeading>
+      <h2 className="section-heading">About me</h2>
       <p>
         I'm from Perinthalmanna, Kerala, India. After earning my bachelor's
         degree in

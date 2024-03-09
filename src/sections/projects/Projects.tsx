@@ -1,7 +1,6 @@
 "use client";
-import SectionHeading from "@/components/SectionHeading";
 import projectsData from "@/lib/projects";
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import Project from "./Project";
 import { motion } from "framer-motion";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
@@ -16,7 +15,7 @@ function Projects() {
       className="scroll-mt-28"
       ref={ref}
     >
-      <SectionHeading>Projects</SectionHeading>
+      <h2 className="section-heading">Projects</h2>
       <div className="space-y-4">
         {projectsData.map((project, index) => (
           <Fragment key={index}>

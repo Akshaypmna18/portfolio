@@ -1,7 +1,5 @@
 "use client";
 
-import SectionHeading from "@/components/SectionHeading";
-import React from "react";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
@@ -20,7 +18,7 @@ function Contact() {
       className="scroll-mt-28 space-y-4"
       ref={ref}
     >
-      <SectionHeading>Contact</SectionHeading>
+      <h2 className="section-heading">Contact</h2>
       <p>
         Please contact me directly at{" "}
         <a className="underline" href="mailto:akshaypmna18@gmail.com">

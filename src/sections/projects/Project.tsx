@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import projectsData from "@/lib/projects";
 import Image from "next/image";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { CodeIcon } from "@radix-ui/react-icons";
 import { Tooltip } from "@mui/material";
