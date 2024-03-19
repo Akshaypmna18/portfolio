@@ -16,6 +16,9 @@ import figma from "@/assets/skill-icons/figma.png";
 import git from "@/assets/skill-icons/git.png";
 import vitest from "@/assets/skill-icons/vitest.png";
 import jQuery from "@/assets/skill-icons/jQuery.png";
+import nodejs from "@/assets/skill-icons/nodejs.png";
+import expressjs from "@/assets/skill-icons/expressjs.png";
+import mongodb from "@/assets/skill-icons/mongodb.png";
 import tanstackQuery from "@/assets/skill-icons/react-query.png";
 
 const skills = [
@@ -112,7 +115,22 @@ const skills = [
   {
     title: "Figma",
     imgSrc: figma,
-    value: 3,
+    value: 3.5,
+  },
+  {
+    title: "Node.js",
+    imgSrc: nodejs,
+    value: 2.5,
+  },
+  {
+    title: "Express.js",
+    imgSrc: expressjs,
+    value: 2.5,
+  },
+  {
+    title: "Mongodb",
+    imgSrc: mongodb,
+    value: 2.5,
   },
 ] as const;
 export default skills;
