@@ -12,8 +12,6 @@ import useActiveSectionContext from "@/features/scrollHandlers/useActiveSectionC
 
 function Buttons() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const buttonClassName =
-    "hover:animate-shimmer hover:bg-gradient-to-r from-secondary via-accent to-secondary bg-[length:200%_100%] transition-colors rounded-full  ";
   return (
     <motion.div
       className="flex flex-wrap gap-2 justify-center"
@@ -39,7 +37,7 @@ function Buttons() {
         </Link>
       </Button>
 
-      <Button variant="secondary" asChild className={buttonClassName}>
+      <Button variant="secondary" asChild className="btn-hover">
         <a
           href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay_K%C2%B7Front_End_Dev.pdf"
           target="_blank"
@@ -49,13 +47,13 @@ function Buttons() {
         </a>
       </Button>
 
-      <Button variant="secondary" asChild className={buttonClassName}>
+      <Button variant="secondary" asChild className="btn-hover">
         <a href="https://www.linkedin.com/in/akshaypmna" target="_blank">
           <LinkedInLogoIcon />
         </a>
       </Button>
 
-      <Button variant="secondary" asChild className={buttonClassName}>
+      <Button variant="secondary" asChild className="btn-hover">
         <a href="https://github.com/Akshaypmna18" target="_blank">
           <GitHubLogoIcon />
         </a>

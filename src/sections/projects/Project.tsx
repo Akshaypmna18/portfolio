@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import projectsData from "@/lib/projects";
 import Image from "next/image";
-import  { useRef } from "react";
+import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { CodeIcon } from "@radix-ui/react-icons";
 import { Tooltip } from "@mui/material";
@@ -39,7 +39,7 @@ function Project({
       viewport={{
         once: true,
       }}
-      className="group mx-auto rounded bg-secondary border border-black/10 max-w-[40rem] p-4 space-y-4 text-start overflow-hidden relative flex flex-wrap"
+      className="group mx-auto rounded bg-secondary border border-black/10 max-w-[40.5rem] p-4 space-y-4 text-start overflow-hidden relative flex flex-wrap"
     >
       <div className="sm:max-w-[50%] sm:group-even:ml-[50%] space-y-2">
         <h3 className="text-2xl font-semibold flex items-center gap-2">

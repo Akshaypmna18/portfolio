@@ -88,4 +88,7 @@
   .section-heading {
     @apply capitalize text-[2.25rem] font-bold mb-5 text-primaryColor;
   }
+  .btn-hover {
+    @apply hover:animate-shimmer hover:bg-gradient-to-r from-secondary via-accent to-secondary bg-[length:200%_100%] transition-colors rounded-full;
+  }
 }
