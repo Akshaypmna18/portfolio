@@ -26,17 +26,17 @@ function Skills() {
         <Image
           src={shape}
           alt=""
-          className="top-[11rem]  absolute -z-0 min-[470px]:hidden"
+          className="absolute top-[11rem] -z-0 min-[470px]:hidden"
         />
         <Image
           src={shape}
           alt=""
-          className="top-[20rem]  absolute -z-0 min-[400px]:hidden"
+          className="absolute top-[20rem] -z-0 min-[400px]:hidden"
         />
         <Image
           src={shape}
           alt=""
-          className="top-[30rem]  absolute -z-0 min-[320px]:hidden"
+          className="absolute top-[30rem] -z-0 min-[320px]:hidden"
         />
       </div>
       <Skill />
