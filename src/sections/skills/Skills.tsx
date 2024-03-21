@@ -3,6 +3,8 @@
 import Skill from "./Skill";
 import useIsVisible from "@/features/scrollHandlers/useIsVisible";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import shape from "@/assets/blurry-shape-1.svg";
 
 function Skills() {
   const ref = useIsVisible("Skills");
@@ -15,6 +17,28 @@ function Skills() {
       className="scroll-mt-28"
     >
       <h2 className="section-heading">Skills</h2>
+      <div className="relative">
+        <Image
+          src={shape}
+          alt=""
+          className=" absolute -z-0 min-[470px]:top-[3rem] min-[570px]:top-0 min-[570px]:pl-16 sm:top-[-6rem] md:top-[-10rem]"
+        />
+        <Image
+          src={shape}
+          alt=""
+          className="top-[11rem]  absolute -z-0 min-[470px]:hidden"
+        />
+        <Image
+          src={shape}
+          alt=""
+          className="top-[20rem]  absolute -z-0 min-[400px]:hidden"
+        />
+        <Image
+          src={shape}
+          alt=""
+          className="top-[30rem]  absolute -z-0 min-[320px]:hidden"
+        />
+      </div>
       <Skill />
     </motion.section>
   );
