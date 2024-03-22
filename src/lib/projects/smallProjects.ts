@@ -1,12 +1,18 @@
-import { ProjectData } from "./types";
+import { ProjectData } from "../types";
+import deliveryApp from "@/assets/projects/figma/delivery-app.png";
+import ott from "@/assets/projects/figma/ott-streaming.png";
+import music from "@/assets/projects/figma/music-app.png";
+import socialMedia from "@/assets/projects/figma/social-media.png";
+import notesApp from "@/assets/projects/github/notes.jpg";
+import quizApp from "@/assets/projects/github/quiz-app.png";
+import todo from "@/assets/projects/github/to-do.png";
 
 export const projectsData: ProjectData[] = [
   {
     title: "Notes App",
     description: "",
     tags: ["React JS", "Zustand", "Firebase", "Tailwind CSS", "Shadcn UI"],
-    imageUrl:
-      "https://private-user-images.githubusercontent.com/67232475/298107999-7de0567d-876b-4c28-a0aa-d717bd7a4625.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTEwNzk5NzIsIm5iZiI6MTcxMTA3OTY3MiwicGF0aCI6Ii82NzIzMjQ3NS8yOTgxMDc5OTktN2RlMDU2N2QtODc2Yi00YzI4LWEwYWEtZDcxN2JkN2E0NjI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzIyVDAzNTQzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkMjFiMGMyYTgyYWM3ZjRiZWVhMjRkN2I3ZGNlYzM0OTIyMGM4OWJjOWIwMGY5YjkwM2RiYjU1ZWY2NjVhZmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.RY8o0qUcx1MKEH7clqkdKzJKYFrDHsk4AcGTGQFpSVQ",
+    imageUrl: notesApp,
     demoLink: "https://aks-notes-app.vercel.app/",
     codeLink: "https://github.com/Akshaypmna18/notes-app",
   },
@@ -20,8 +26,7 @@ export const projectsData: ProjectData[] = [
       "Shadcn UI",
       "Open Trivia API",
     ],
-    imageUrl:
-      "https://private-user-images.githubusercontent.com/67232475/289433545-abb8fe5b-cfd0-4657-b92c-8cda6c89515f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTEwODA5MDQsIm5iZiI6MTcxMTA4MDYwNCwicGF0aCI6Ii82NzIzMjQ3NS8yODk0MzM1NDUtYWJiOGZlNWItY2ZkMC00NjU3LWI5MmMtOGNkYTZjODk1MTVmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzIyVDA0MTAwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY1MTFmZTg4N2MxZTBlYmU2YzNhNTkyNGI2ZGZjMmMyOWEwMDJhNDc4YjEwMDg5MWRjM2NjZTAxNzYxMTNhYTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Bfe5G2ZLtrRqgvRi_8mKYzvDXoCRsuqhG7IL1oVImCM",
+    imageUrl: quizApp,
     demoLink: "https://quiz-app-aks.vercel.app/",
     codeLink: "https://github.com/Akshaypmna18/quiz-app",
   },
@@ -35,8 +40,7 @@ export const projectsData: ProjectData[] = [
       "Tailwind CSS",
       "Shadcn UI",
     ],
-    imageUrl:
-      "https://private-user-images.githubusercontent.com/67232475/292424922-5ae73168-274d-4412-8b5f-8b9d06362b6a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTEwODAyODMsIm5iZiI6MTcxMTA3OTk4MywicGF0aCI6Ii82NzIzMjQ3NS8yOTI0MjQ5MjItNWFlNzMxNjgtMjc0ZC00NDEyLThiNWYtOGI5ZDA2MzYyYjZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzIyVDAzNTk0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIwYmZhMzI1MzljMGFkODg4ZTAwNGU4YWY1OWQ1MDUxMzQzYWE2MzVhODlkODAzZjNiMDIzN2M0ODVmZjlkYzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.1rSTgBzisTk561IPvvkeA297UVgg4mb40odZbSJ1JNg",
+    imageUrl: todo,
     demoLink: "https://aks-to-do.vercel.app/",
     codeLink: "https://github.com/Akshaypmna18/to-do",
   },
@@ -169,5 +173,37 @@ export const projectsData: ProjectData[] = [
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/googleHomepage/googleHomepage.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/googleHomepage/",
+  },
+  {
+    title: "Delivery App",
+    description: "",
+    tags: ["Figma"],
+    imageUrl: deliveryApp,
+    demoLink:
+      "https://www.figma.com/proto/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=44-83&t=pK4NydFWBJOXtAfH-0&scaling=scale-down&page-id=41%3A2&starting-point-node-id=44%3A83",
+  },
+  {
+    title: "OTT platform",
+    description: "",
+    tags: ["Figma"],
+    imageUrl: ott,
+    demoLink:
+      "https://www.figma.com/proto/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=53-2&t=pK4NydFWBJOXtAfH-0&scaling=scale-down&page-id=53%3A2&starting-point-node-id=54%3A206",
+  },
+  {
+    title: "Music App",
+    description: "",
+    tags: ["Figma"],
+    imageUrl: music,
+    demoLink:
+      "https://www.figma.com/proto/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=92-210&t=pK4NydFWBJOXtAfH-0&scaling=scale-down&page-id=92%3A210&starting-point-node-id=105%3A504",
+  },
+  {
+    title: "Social Media",
+    description: "",
+    tags: ["Figma"],
+    imageUrl: socialMedia,
+    demoLink:
+      "https://www.figma.com/file/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=119-43&mode=design&t=pK4NydFWBJOXtAfH-0",
   },
 ] as const;

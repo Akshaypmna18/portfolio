@@ -1,7 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import projectsData from "@/lib/projects";
+import projectsData from "@/lib/projects/projects";
 import Image from "next/image";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";

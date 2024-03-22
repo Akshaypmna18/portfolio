@@ -22,13 +22,13 @@ function ProjectCard({
   return (
     <HoverCard>
       <HoverCardTrigger>
-        <div className="max-w-[18rem] relative group">
+        <div className="max-w-[18rem] max-h-[10rem] relative group">
           <Image
             src={imageUrl}
             width={1000}
             height={1000}
             alt="mini"
-            className="rounded-lg opacity-80 group-hover:opacity-100"
+            className="rounded-lg opacity-80 max-h-[9.25rem] group-hover:opacity-100"
           />
           <div className="flex items-center text-white gap-2 absolute bg-gradient-to-b from-gray-900/70 to-gray-900 bottom-0 w-full rounded-b-lg p-2 font-bold">
             <a

@@ -2,7 +2,7 @@ import qryptell from "@/assets/projects/qryptell.png";
 import portfolio from "@/assets/projects/portfolio.png";
 import hotelierPro from "@/assets/projects/hotelier-pro/landing-page.png";
 import vehicleFleet from "@/assets/projects/car-rental/vehicle-fleet-section.png";
-import { ProjectData } from "./types";
+import { ProjectData } from "../types";
 
 const projectsData: ProjectData[] = [
   {

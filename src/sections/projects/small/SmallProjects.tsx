@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import ProjectCard from "./ProjectCard";
-import { projectsData } from "@/lib/smallProjects";
+import { projectsData } from "@/lib/projects/smallProjects";
 import { Fragment } from "react";
 
 /** Small Projects */

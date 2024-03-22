@@ -1,5 +1,5 @@
 "use client";
-import projectsData from "@/lib/projects";
+import projectsData from "@/lib/projects/projects";
 import { Fragment } from "react";
 import Project from "./Project";
 import { motion } from "framer-motion";
