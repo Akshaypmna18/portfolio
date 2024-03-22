@@ -19,6 +19,8 @@ import jQuery from "@/assets/skill-icons/jQuery.png";
 import nodejs from "@/assets/skill-icons/nodejs.png";
 import expressjs from "@/assets/skill-icons/expressjs.png";
 import mongodb from "@/assets/skill-icons/mongodb.png";
+import prisma from "@/assets/skill-icons/prisma.png";
+import postgres from "@/assets/skill-icons/postgres.png";
 import tanstackQuery from "@/assets/skill-icons/react-query.png";
 
 const skills = [
@@ -130,6 +132,16 @@ const skills = [
   {
     title: "Mongodb",
     imgSrc: mongodb,
+    value: 2.5,
+  },
+  {
+    title: "Prisma",
+    imgSrc: prisma,
+    value: 2.5,
+  },
+  {
+    title: "Postgres",
+    imgSrc: postgres,
     value: 2.5,
   },
 ] as const;
