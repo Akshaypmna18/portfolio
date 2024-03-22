@@ -9,6 +9,7 @@ export type LinksType = {
 };
 
 export type ProjectData = {
+  category?: "Web App" | "HTML & CSS" | "JS & jQuery" | "UI/UX" | "Mobile App";
   title: string;
   description: string;
   tags: string[];

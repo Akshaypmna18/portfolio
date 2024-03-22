@@ -9,16 +9,18 @@ import todo from "@/assets/projects/github/to-do.png";
 
 export const projectsData: ProjectData[] = [
   {
+    category: "Web App",
     title: "Notes App",
-    description: "",
+    description: "An app to write, organize, and manage your personal notes.",
     tags: ["React JS", "Zustand", "Firebase", "Tailwind CSS", "Shadcn UI"],
     imageUrl: notesApp,
     demoLink: "https://aks-notes-app.vercel.app/",
     codeLink: "https://github.com/Akshaypmna18/notes-app",
   },
   {
+    category: "Web App",
     title: "Quiz App",
-    description: "",
+    description: "Test your knowledge with fun quizzes on various topics.",
     tags: [
       "React JS",
       "Zustand",
@@ -31,8 +33,9 @@ export const projectsData: ProjectData[] = [
     codeLink: "https://github.com/Akshaypmna18/quiz-app",
   },
   {
+    category: "Web App",
     title: "Todo App",
-    description: "",
+    description: "Keep track of your tasks and stay organized effortlessly.",
     tags: [
       "React JS",
       "Zustand",
@@ -45,112 +48,134 @@ export const projectsData: ProjectData[] = [
     codeLink: "https://github.com/Akshaypmna18/to-do",
   },
   {
+    category: "HTML & CSS",
     title: "Aim Bot Clone",
-    description: "",
+    description: "Explore replica of the popular website Aim Bot",
     tags: ["Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/aimBotClone.png?raw=true",
     demoLink: "https://aim-bot-demo.vercel.app/",
   },
   {
+    category: "HTML & CSS",
     title: "Bootstrap5 Clone",
-    description: "",
+    description: "Explore replica of the popular website Bootstrap",
     tags: ["Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/bootstrapClone/bootstrapClone.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/bootstrapClone/",
   },
   {
+    category: "HTML & CSS",
     title: "Danjuan scroll cat Clone",
-    description: "",
+    description: "Explore replica of the popular website Danjuan scroll cat",
     tags: ["Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/catGameClone.png?raw=true",
     demoLink: "https://cat-game-demo.vercel.app/",
   },
   {
+    category: "JS & jQuery",
     title: "Notes App JS",
-    description: "",
+    description: "An app to write, organize, and manage your personal notes.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/notesApp/notesApp.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/javascript/notesApp/",
   },
   {
+    category: "HTML & CSS",
     title: "Landing page",
-    description: "",
+    description:
+      "Engaging web pages designed to convert visitors into customers.",
     tags: ["HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/vegNutrition/vegNutrition.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/vegNutrition/",
   },
   {
+    category: "HTML & CSS",
     title: "Landing page",
-    description: "",
+    description:
+      "Engaging web pages designed to convert visitors into customers.",
     tags: ["BootStrap5", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/freelance/cleaningServices/cleaningServices.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/freelance/cleaningServices/",
   },
   {
+    category: "HTML & CSS",
     title: "Landing page",
-    description: "",
+    description:
+      "Engaging web pages designed to convert visitors into customers.",
     tags: ["BootStrap5", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/themeChange/themeChange.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/themeChange/",
   },
   {
+    category: "HTML & CSS",
     title: "Portfolio v1",
-    description: "",
+    description:
+      "A personal portfolio showcasing my journey and expertise as a front-end developer. Explore my projects, skills, and experience in one central hub.",
     tags: ["HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/portfolio.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/portfolio-v1/",
   },
   {
+    category: "JS & jQuery",
     title: "Shopping Cart",
-    description: "",
+    description: "Easily add and manage items for purchases.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/shoppingCart/shoppingCart.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/javascript/shoppingCart/",
   },
   {
+    category: "JS & jQuery",
     title: "Quiz App JS",
-    description: "",
+    description: "Test your knowledge with fun quizzes on various topics.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/quizApp/quiz-app.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/javascript/quizApp/",
   },
   {
+    category: "JS & jQuery",
     title: "Calculator",
-    description: "",
+    description:
+      "Perform basic arithmetic operations with ease using a simple interface",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/calculator/calculator.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/javascript/calculator/",
   },
   {
+    category: "JS & jQuery",
     title: "Music Player",
-    description: "",
+    description:
+      "Enjoy your favorite tunes with an easy-to-use music playback tool",
     tags: ["JavaScript", "jQuery", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/music-player/music-player.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/javascript/music-player/",
   },
   {
+    category: "JS & jQuery",
     title: "Calendar",
-    description: "",
+    description:
+      "Keep track of important dates and events with a user-friendly calendar interface.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/calendar/calendar.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/javascript/calendar/",
   },
   {
+    category: "JS & jQuery",
     title: "Temperature Converter",
-    description: "",
+    description:
+      "Convert between Celsius and Fahrenheit effortlessly for weather forecasts",
     tags: ["JavaScript", "jQuery", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/javascript/temperature-converter/temperature-converter.png?raw=true",
@@ -158,8 +183,9 @@ export const projectsData: ProjectData[] = [
       "https://akshaypmna18.github.io/javascript/temperature-converter/",
   },
   {
+    category: "HTML & CSS",
     title: "Google Signin Clone",
-    description: "",
+    description: "Explore replica of the popular website Google Signin",
     tags: ["JavaScript", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/googleHomepage/googleSignInpage/googleSigninpage.png?raw=true",
@@ -167,40 +193,45 @@ export const projectsData: ProjectData[] = [
       "https://akshaypmna18.github.io/design/googleHomepage/googleSignInpage/",
   },
   {
+    category: "HTML & CSS",
     title: "Google Homepage Clone",
-    description: "",
+    description: "Explore replica of the popular website Google Homepage",
     tags: ["JavaScript", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/googleHomepage/googleHomepage.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/googleHomepage/",
   },
   {
+    category: "UI/UX",
     title: "Delivery App",
-    description: "",
+    description: "Access design files for UI/UX projects and collaborations",
     tags: ["Figma"],
     imageUrl: deliveryApp,
     demoLink:
       "https://www.figma.com/proto/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=44-83&t=pK4NydFWBJOXtAfH-0&scaling=scale-down&page-id=41%3A2&starting-point-node-id=44%3A83",
   },
   {
+    category: "UI/UX",
     title: "OTT platform",
-    description: "",
+    description: "Access design files for UI/UX projects and collaborations",
     tags: ["Figma"],
     imageUrl: ott,
     demoLink:
       "https://www.figma.com/proto/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=53-2&t=pK4NydFWBJOXtAfH-0&scaling=scale-down&page-id=53%3A2&starting-point-node-id=54%3A206",
   },
   {
+    category: "UI/UX",
     title: "Music App",
-    description: "",
+    description: "Access design files for UI/UX projects and collaborations",
     tags: ["Figma"],
     imageUrl: music,
     demoLink:
       "https://www.figma.com/proto/sVRwnzygu6XtgnVLTvjngU/My-Projects?type=design&node-id=92-210&t=pK4NydFWBJOXtAfH-0&scaling=scale-down&page-id=92%3A210&starting-point-node-id=105%3A504",
   },
   {
+    category: "UI/UX",
     title: "Social Media",
-    description: "",
+    description: "Access design files for UI/UX projects and collaborations",
     tags: ["Figma"],
     imageUrl: socialMedia,
     demoLink:
