@@ -33,21 +33,6 @@ export const projectsData: ProjectData[] = [
     codeLink: "https://github.com/Akshaypmna18/quiz-app",
   },
   {
-    category: "Interactive",
-    title: "Todo App",
-    description: "Keep track of your tasks and stay organized effortlessly.",
-    tags: [
-      "React JS",
-      "Zustand",
-      "React Beautiful DND",
-      "Tailwind CSS",
-      "Shadcn UI",
-    ],
-    imageUrl: todo,
-    demoLink: "https://aks-to-do.vercel.app/",
-    codeLink: "https://github.com/Akshaypmna18/to-do",
-  },
-  {
     category: "Designs",
     title: "Aim Bot Clone",
     description: "Explore replica of the popular website Aim Bot",
@@ -200,6 +185,21 @@ export const projectsData: ProjectData[] = [
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/googleHomepage/googleHomepage.png?raw=true",
     demoLink: "https://akshaypmna18.github.io/design/googleHomepage/",
+  },
+  {
+    category: "Interactive",
+    title: "Todo App",
+    description: "Keep track of your tasks and stay organized effortlessly.",
+    tags: [
+      "React JS",
+      "Zustand",
+      "React Beautiful DND",
+      "Tailwind CSS",
+      "Shadcn UI",
+    ],
+    imageUrl: todo,
+    demoLink: "https://aks-to-do.vercel.app/",
+    codeLink: "https://github.com/Akshaypmna18/to-do",
   },
   {
     category: "UI/UX",
