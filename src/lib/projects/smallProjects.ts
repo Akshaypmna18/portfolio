@@ -35,7 +35,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "Designs",
     title: "Aim Bot Clone",
-    description: "Explore replica of the popular website Aim Bot",
+    description: "Explore replica of the popular website - Aim Bot",
     tags: ["Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/aimBotClone.png?raw=true",
@@ -44,7 +44,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "Designs",
     title: "Bootstrap5 Clone",
-    description: "Explore replica of the popular website Bootstrap",
+    description: "Explore replica of the popular website - Bootstrap",
     tags: ["Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/bootstrapClone/bootstrapClone.png?raw=true",
@@ -53,7 +53,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "Designs",
     title: "Danjuan scroll cat Clone",
-    description: "Explore replica of the popular website Danjuan scroll cat",
+    description: "Explore replica of the popular website - Danjuan scroll cat",
     tags: ["Bootstrap5"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/catGameClone.png?raw=true",
@@ -170,7 +170,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "Designs",
     title: "Google Signin Clone",
-    description: "Explore replica of the popular website Google Signin",
+    description: "Explore replica of the popular website - Google Signin",
     tags: ["JavaScript", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/googleHomepage/googleSignInpage/googleSigninpage.png?raw=true",
@@ -180,7 +180,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "Designs",
     title: "Google Homepage Clone",
-    description: "Explore replica of the popular website Google Homepage",
+    description: "Explore replica of the popular website - Google Homepage",
     tags: ["JavaScript", "HTML5", "CSS3"],
     imageUrl:
       "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/googleHomepage/googleHomepage.png?raw=true",

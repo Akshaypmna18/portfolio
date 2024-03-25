@@ -17,12 +17,12 @@ function SmallProjects() {
     "Interactive",
     "Designs",
     "UI/UX",
-    "Mobile App",
+    "Mobile Apps",
   ];
 
   return (
     <section className="p-4 pt-12 2xl:max-w-[80vw] 2xl:mx-auto relative">
-      <div className="flex flex-wrap gap-4 justify-center ">
+      <header className="flex flex-wrap gap-4 justify-center fixed left-0 top-0 p-2 pt-4 min-[520px]:pt-10 sm:pt-12 pb-2 w-full bg-background z-[60]">
         {categories.map((category) => {
           return (
             <Button
@@ -36,18 +36,18 @@ function SmallProjects() {
             </Button>
           );
         })}
-      </div>
-      <div className="mt-12 flex flex-wrap gap-x-6 gap-y-8 justify-center">
+      </header>
+      <div className="mt-[8rem] min-[310px]:mt-20 min-[520px]:mt-12 sm:mt-16 flex flex-wrap gap-x-6 gap-y-8 xl:gap-x-8 xl:gap-y-12 justify-center items-center">
         {toggle === "All" &&
           projectsData.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         {toggle !== "All" &&
-          toggle !== "Mobile App" &&
+          toggle !== "Mobile Apps" &&
           projectsData
             .filter((project) => project.category === toggle)
             .map((project, index) => <ProjectCard key={index} {...project} />)}
-        {toggle === "Mobile App" && (
+        {toggle === "Mobile Apps" && (
           <p className="text-xl font-bold">Coming soon...</p>
         )}
       </div>

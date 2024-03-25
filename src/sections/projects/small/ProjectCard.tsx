@@ -22,13 +22,13 @@ function ProjectCard({
   return (
     <HoverCard>
       <HoverCardTrigger>
-        <div className="max-w-[15rem] min-[650px]:max-w-[18rem] relative group">
+        <div className="min-[400px]:w-[clamp(10rem,40vw,18rem)] min-[400px]:h-[8rem] sm:h-auto max-w-[15rem] min-[650px]:max-w-[18rem] min-[775px]:w-[clamp(12rem,25vw,18rem)] min-[775px]:h-[8rem] lg:w-[18rem] 2xl:w-[20rem] 2xl:max-w-[20rem] min-[2000px]:w-[25rem] min-[2000px]:max-w-[25rem] lg:h-[10rem] lg:max-h-[10rem] min-[2000px]:h-[12.5rem] min-[2000px]:max-h-[12.5rem] relative group">
           <Image
             src={imageUrl}
             width={1000}
             height={1000}
             alt="mini"
-            className="rounded-lg opacity-80 min-[550px]:max-h-[7.75rem] min-[650px]:max-h-[9.25rem] group-hover:opacity-100"
+            className="rounded-lg opacity-80 min-[400px]:h-[8rem] min-[550px]:max-h-[7.75rem] sm:h-auto min-[775px]:h-[9rem] lg:h-[10rem] lg:max-h-[10rem] min-[2000px]:h-[12.5rem] min-[2000px]:max-h-[12.5rem] group-hover:opacity-100 object-cover"
           />
           <div className="flex items-center text-white gap-2 absolute bg-gradient-to-b from-gray-900/70 to-gray-900 bottom-0 w-full rounded-b-lg p-2 font-bold">
             <a
