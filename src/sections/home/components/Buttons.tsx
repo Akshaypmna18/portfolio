@@ -37,7 +37,7 @@ function Buttons() {
         </Link>
       </Button>
 
-      <Button variant="secondary" asChild className="btn-hover">
+      <Button variant="secondary" asChild className="btn-hover rounded-full">
         <a
           href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay_K%C2%B7Front_End_Dev.pdf"
           target="_blank"
@@ -47,13 +47,13 @@ function Buttons() {
         </a>
       </Button>
 
-      <Button variant="secondary" asChild className="btn-hover">
+      <Button variant="secondary" asChild className="btn-hover rounded-full">
         <a href="https://www.linkedin.com/in/akshaypmna" target="_blank">
           <LinkedInLogoIcon />
         </a>
       </Button>
 
-      <Button variant="secondary" asChild className="btn-hover">
+      <Button variant="secondary" asChild className="btn-hover rounded-full">
         <a href="https://github.com/Akshaypmna18" target="_blank">
           <GitHubLogoIcon />
         </a>

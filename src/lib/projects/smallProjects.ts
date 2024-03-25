@@ -9,7 +9,7 @@ import todo from "@/assets/projects/github/to-do.png";
 
 export const projectsData: ProjectData[] = [
   {
-    category: "Web App",
+    category: "Interactive",
     title: "Notes App",
     description: "An app to write, organize, and manage your personal notes.",
     tags: ["React JS", "Zustand", "Firebase", "Tailwind CSS", "Shadcn UI"],
@@ -18,7 +18,7 @@ export const projectsData: ProjectData[] = [
     codeLink: "https://github.com/Akshaypmna18/notes-app",
   },
   {
-    category: "Web App",
+    category: "Interactive",
     title: "Quiz App",
     description: "Test your knowledge with fun quizzes on various topics.",
     tags: [
@@ -33,7 +33,7 @@ export const projectsData: ProjectData[] = [
     codeLink: "https://github.com/Akshaypmna18/quiz-app",
   },
   {
-    category: "Web App",
+    category: "Interactive",
     title: "Todo App",
     description: "Keep track of your tasks and stay organized effortlessly.",
     tags: [
@@ -48,7 +48,7 @@ export const projectsData: ProjectData[] = [
     codeLink: "https://github.com/Akshaypmna18/to-do",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Aim Bot Clone",
     description: "Explore replica of the popular website Aim Bot",
     tags: ["Bootstrap5"],
@@ -57,7 +57,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://aim-bot-demo.vercel.app/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Bootstrap5 Clone",
     description: "Explore replica of the popular website Bootstrap",
     tags: ["Bootstrap5"],
@@ -66,7 +66,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/design/bootstrapClone/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Danjuan scroll cat Clone",
     description: "Explore replica of the popular website Danjuan scroll cat",
     tags: ["Bootstrap5"],
@@ -75,7 +75,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://cat-game-demo.vercel.app/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Notes App JS",
     description: "An app to write, organize, and manage your personal notes.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
@@ -84,7 +84,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/javascript/notesApp/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Landing page",
     description:
       "Engaging web pages designed to convert visitors into customers.",
@@ -94,7 +94,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/design/vegNutrition/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Landing page",
     description:
       "Engaging web pages designed to convert visitors into customers.",
@@ -104,7 +104,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/freelance/cleaningServices/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Landing page",
     description:
       "Engaging web pages designed to convert visitors into customers.",
@@ -114,7 +114,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/design/themeChange/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Portfolio v1",
     description:
       "A personal portfolio showcasing my journey and expertise as a front-end developer. Explore my projects, skills, and experience in one central hub.",
@@ -124,7 +124,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/design/portfolio-v1/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Shopping Cart",
     description: "Easily add and manage items for purchases.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
@@ -133,7 +133,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/javascript/shoppingCart/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Quiz App JS",
     description: "Test your knowledge with fun quizzes on various topics.",
     tags: ["JavaScript", "jQuery", "Bootstrap5"],
@@ -142,7 +142,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/javascript/quizApp/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Calculator",
     description:
       "Perform basic arithmetic operations with ease using a simple interface",
@@ -152,7 +152,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/javascript/calculator/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Music Player",
     description:
       "Enjoy your favorite tunes with an easy-to-use music playback tool",
@@ -162,7 +162,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/javascript/music-player/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Calendar",
     description:
       "Keep track of important dates and events with a user-friendly calendar interface.",
@@ -172,7 +172,7 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/javascript/calendar/",
   },
   {
-    category: "JS & jQuery",
+    category: "Interactive",
     title: "Temperature Converter",
     description:
       "Convert between Celsius and Fahrenheit effortlessly for weather forecasts",
@@ -183,7 +183,7 @@ export const projectsData: ProjectData[] = [
       "https://akshaypmna18.github.io/javascript/temperature-converter/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Google Signin Clone",
     description: "Explore replica of the popular website Google Signin",
     tags: ["JavaScript", "HTML5", "CSS3"],
@@ -193,7 +193,7 @@ export const projectsData: ProjectData[] = [
       "https://akshaypmna18.github.io/design/googleHomepage/googleSignInpage/",
   },
   {
-    category: "HTML & CSS",
+    category: "Designs",
     title: "Google Homepage Clone",
     description: "Explore replica of the popular website Google Homepage",
     tags: ["JavaScript", "HTML5", "CSS3"],

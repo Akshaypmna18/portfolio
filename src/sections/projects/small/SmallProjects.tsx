@@ -14,16 +14,15 @@ function SmallProjects() {
   const toggleBtn = "font-bold tracking-wider hover:bg-primary underline";
   const categories: ToggleType[] = [
     "All",
-    "Web App",
-    "HTML & CSS",
-    "JS & jQuery",
+    "Interactive",
+    "Designs",
     "UI/UX",
     "Mobile App",
   ];
 
   return (
-    <section className="p-4 pt-12 2xl:max-w-[80vw] 2xl:mx-auto">
-      <div className="flex flex-wrap gap-4 justify-center">
+    <section className="p-4 pt-12 2xl:max-w-[80vw] 2xl:mx-auto relative">
+      <div className="flex flex-wrap gap-4 justify-center ">
         {categories.map((category) => {
           return (
             <Button
@@ -38,7 +37,7 @@ function SmallProjects() {
           );
         })}
       </div>
-      <div className="mt-8 flex flex-wrap gap-x-6 gap-y-8 justify-center">
+      <div className="mt-12 flex flex-wrap gap-x-6 gap-y-8 justify-center">
         {toggle === "All" &&
           projectsData.map((project, index) => (
             <ProjectCard key={index} {...project} />
