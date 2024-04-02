@@ -21,7 +21,7 @@ function Skills() {
         <Image
           src={shape}
           alt=""
-          className=" absolute -z-0 min-[470px]:top-[3rem] min-[570px]:top-0 min-[570px]:pl-16 sm:top-[-6rem] md:top-[-10rem]"
+          className=" absolute -z-0 min-[470px]:top-[3rem] min-[570px]:top-0 min-[570px]:pl-16 sm:top-[-6rem] md:top-[-8rem]"
         />
         <Image
           src={shape}

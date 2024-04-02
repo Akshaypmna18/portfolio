@@ -11,7 +11,7 @@ type Props = {
 
 function Header({ scrollYProgress }: Props) {
   return (
-    <header className="sticky top-0 z-10 flex justify-between items-center bg-background sm:bg-transparent backdrop-blur-md p-4 xl:max-w-[80%] mx-auto">
+    <header className="sticky top-0 z-10 flex justify-between items-center bg-background sm:bg-transparent backdrop-blur-md p-4 xl:max-w-[60rem] mx-auto">
       <div className="flex gap-1 items-center">
         <svg id="progress" width="40" height="40" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
