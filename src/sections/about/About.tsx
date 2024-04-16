@@ -22,9 +22,9 @@ function About() {
         degree in
         <span className="font-medium text-primaryColor">
           {" "}
-          Computer Applications
-        </span>
-        , I decided to pursue my passion for programming. I am a self-taught
+          Computer Applications 
+        </span>{" "}
+        in 2023, I decided to pursue my passion for programming. I am a self-taught
         front-end developer with a love for{" "}
         <span className="italic text-primaryColor"> problem-solving</span>,{" "}
         <span className="italic text-primaryColor">design</span>, and{" "}
