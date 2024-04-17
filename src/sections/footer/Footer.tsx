@@ -1,4 +1,4 @@
-import React from "react";
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -6,7 +6,7 @@ function Footer() {
       <small>
         &copy; {new Date().getFullYear()} · Designed and Developed by{" "}
         <big>
-          <i className="text-primaryColor">Akshay K </i>
+          <Link href="/" className="text-primaryColor italic hover:underline">Akshay K </Link>
         </big>
         · All Rights Reserved
       </small>
