@@ -72,7 +72,7 @@ function SmallProjects() {
             <p className="text-xl font-bold">Coming soon...</p>
           )}
         </main>
-        <div className={`${toggle === "UI/UX" || toggle==="Mobile Apps" ? "fixed bottom-0 left-[50%] translate-x-[-50%]": ""}`}><Footer /></div>
+        <div className={`${toggle === "Mobile Apps" ? "fixed bottom-0 left-[50%] translate-x-[-50%]": toggle === "UI/UX" ? "min-[400px]:fixed bottom-0 left-[50%] min-[400px]:translate-x-[-50%]" : ""}`}><Footer /></div>
        </>
       )}
     </section>
