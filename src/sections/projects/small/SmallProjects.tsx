@@ -6,6 +6,8 @@ import { projectsData } from "@/lib/projects/smallProjects";
 import { useState, useEffect } from "react";
 import { ProjectData } from "@/lib/types";
 import Footer from '@/sections/footer'
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 type ToggleType = ProjectData["category"] | "All";
 
@@ -19,7 +21,8 @@ type ToggleType = ProjectData["category"] | "All";
 
 /** Small Projects */
 function SmallProjects() {
-  const [toggle, setToggle] = useState<ToggleType>("All");
+  const searchParams=useSearchParams()
+  const toggle=searchParams.get('category') || "All"
   const [isLoading, setIsLoading] = useState(true);
   const toggleBtn = "font-bold tracking-wider hover:bg-primary underline";
   useEffect(() => {
@@ -35,13 +38,15 @@ function SmallProjects() {
         {categories.map((category) => {
           return (
             <Button
+            asChild
               key={category}
-              onClick={() => setToggle(category)}
               className={`btn-hover hover:text-primary ${
                 toggle === category ? toggleBtn : ""
               }`}
-            >
-              {category}
+            >    
+              <Link replace href={`/small-projects?category=${category}`}>
+            {category}
+          </Link>    
             </Button>
           );
         })}
