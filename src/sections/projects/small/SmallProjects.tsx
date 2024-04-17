@@ -9,11 +9,6 @@ import Footer from '@/sections/footer'
 
 type ToggleType = ProjectData["category"] | "All";
 
-/** Small Projects */
-function SmallProjects() {
-  const [toggle, setToggle] = useState<ToggleType>("All");
-  const [isLoading, setIsLoading] = useState(true);
-  const toggleBtn = "font-bold tracking-wider hover:bg-primary underline";
   const categories: ToggleType[] = [
     "All",
     "Interactive",
@@ -21,6 +16,12 @@ function SmallProjects() {
     "UI/UX",
     "Mobile Apps",
   ];
+
+/** Small Projects */
+function SmallProjects() {
+  const [toggle, setToggle] = useState<ToggleType>("All");
+  const [isLoading, setIsLoading] = useState(true);
+  const toggleBtn = "font-bold tracking-wider hover:bg-primary underline";
   useEffect(() => {
     const delay = setTimeout(() => {
       setIsLoading(false);
@@ -66,7 +67,8 @@ function SmallProjects() {
             <p className="text-xl font-bold">Coming soon...</p>
           )}
         </main>
-      <Footer /> </>
+        <div className={`${toggle === "UI/UX" || toggle==="Mobile Apps" ? "fixed bottom-0 left-[50%] translate-x-[-50%]": ""}`}><Footer /></div>
+       </>
       )}
     </section>
   );
