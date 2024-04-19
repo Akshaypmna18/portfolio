@@ -204,7 +204,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "UI/UX",
     title: "Delivery App",
-    description: "Access design files for UI/UX projects and collaborations",
+    description: "UI/UX design for Delivery App",
     tags: ["Figma"],
     imageUrl: deliveryApp,
     demoLink:
@@ -213,7 +213,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "UI/UX",
     title: "OTT platform",
-    description: "Access design files for UI/UX projects and collaborations",
+    description: "UI/UX design for OTT platform",
     tags: ["Figma"],
     imageUrl: ott,
     demoLink:
@@ -222,7 +222,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "UI/UX",
     title: "Music App",
-    description: "Access design files for UI/UX projects and collaborations",
+    description: "UI/UX design for Music App",
     tags: ["Figma"],
     imageUrl: music,
     demoLink:
@@ -231,7 +231,7 @@ export const projectsData: ProjectData[] = [
   {
     category: "UI/UX",
     title: "Social Media",
-    description: "Access design files for UI/UX projects and collaborations",
+    description: "UI/UX design for Social Media",
     tags: ["Figma"],
     imageUrl: socialMedia,
     demoLink:
