@@ -23,6 +23,7 @@ import prisma from "@/assets/skill-icons/prisma.png";
 import postgres from "@/assets/skill-icons/postgres.png";
 import tanstackQuery from "@/assets/skill-icons/react-query.png";
 import framerMotion from "@/assets/skill-icons/framer-motion.png";
+import zod from "@/assets/skill-icons/zod.png";
 
 const skills = [
   {
@@ -94,6 +95,11 @@ const skills = [
     title: "Tanstack Query",
     imgSrc: tanstackQuery,
     value: 3,
+  },
+  {
+    title: "Zod",
+    imgSrc: zod,
+    value: 3.5,
   },
   {
     title: "Framer Motion",
