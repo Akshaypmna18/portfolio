@@ -51,15 +51,6 @@ export const projectsData: ProjectData[] = [
     demoLink: "https://akshaypmna18.github.io/design/bootstrapClone/",
   },
   {
-    category: "Designs",
-    title: "Danjuan scroll cat Clone",
-    description: "Explore replica of the popular website - Danjuan scroll cat",
-    tags: ["Bootstrap5"],
-    imageUrl:
-      "https://github.com/Akshaypmna18/akshaypmna18.github.io/blob/main/design/catGameClone.png?raw=true",
-    demoLink: "https://cat-game-demo.vercel.app/",
-  },
-  {
     category: "Interactive",
     title: "Notes App JS",
     description: "An app to write, organize, and manage your personal notes.",
