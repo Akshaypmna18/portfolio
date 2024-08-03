@@ -25,6 +25,7 @@ import tanstackQuery from "@/assets/skill-icons/react-query.png";
 import framerMotion from "@/assets/skill-icons/framer-motion.png";
 import zod from "@/assets/skill-icons/zod.png";
 import astro from "@/assets/skill-icons/astro.png";
+import reactNative from "@/assets/skill-icons/react-native.png";
 
 const skills = [
   {
@@ -105,6 +106,11 @@ const skills = [
   {
     title: "Framer Motion",
     imgSrc: framerMotion,
+    value: 3,
+  },
+  {
+    title: "React Native",
+    imgSrc: reactNative,
     value: 3,
   },
   {
