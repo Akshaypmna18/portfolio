@@ -20,7 +20,7 @@ function ProjectCard({
   codeLink,
 }: ProjectData) {
   return (
-    <HoverCard>
+    <HoverCard openDelay={200}>
       <HoverCardTrigger>
         <div className="min-[400px]:w-[clamp(10rem,40vw,18rem)] min-[400px]:h-[8rem] sm:h-auto max-w-[15rem] min-[650px]:max-w-[18rem] min-[775px]:w-[clamp(12rem,25vw,18rem)] min-[775px]:h-[8rem] lg:w-[18rem] 2xl:w-[20rem] 2xl:max-w-[20rem] min-[2000px]:w-[25rem] min-[2000px]:max-w-[25rem] lg:h-[10rem] lg:max-h-[10rem] min-[2000px]:h-[12.5rem] min-[2000px]:max-h-[12.5rem] relative group">
           <Image
