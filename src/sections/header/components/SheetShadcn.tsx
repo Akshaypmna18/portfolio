@@ -15,7 +15,7 @@ function SheetShadcn() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <TextAlignRightIcon className="h-8 w-8 hover:text-primaryColor cursor-pointer sm:hidden" />
+        <TextAlignRightIcon className="h-8 w-8 hover:text-primaryColor cursor-pointer md:hidden" />
       </SheetTrigger>
       <SheetContent
         side="left"

@@ -9,7 +9,7 @@ import { LinksType } from "@/lib/types";
 function NavBar() {
   return (
     <motion.nav
-      className="bg-secondary rounded-full hidden w-[min(50%,25rem)] sm:block shadow z-10 p-2"
+      className="bg-secondary rounded-full hidden w-[min(50%,28rem)] md:block shadow z-10 p-2"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >

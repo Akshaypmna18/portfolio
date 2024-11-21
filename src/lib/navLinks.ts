@@ -8,6 +8,10 @@ const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Skills",
     hash: "#skills",
   },

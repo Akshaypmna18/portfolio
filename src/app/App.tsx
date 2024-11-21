@@ -1,11 +1,12 @@
 "use client";
 
 import Skills from "@/sections/skills";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Projects from "@/sections/projects";
 import Header from "@/sections/header";
 import Home from "@/sections/home";
 import About from "@/sections/about";
+import Experience from "@/sections/experience";
 import Contact from "@/sections/contact";
 import Footer from "@/sections/footer";
 import TextRevealCard from "@/sections/textRevealCard";
@@ -28,6 +29,7 @@ export default function App() {
         >
           <Home />
           <About />
+          <Experience />
           <Skills />
           <Projects />
           <TextRevealCard />
