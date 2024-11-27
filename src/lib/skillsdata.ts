@@ -25,6 +25,7 @@ import tanstackQuery from "@/assets/skill-icons/react-query.png";
 import framerMotion from "@/assets/skill-icons/framer-motion.png";
 import zod from "@/assets/skill-icons/zod.png";
 import astro from "@/assets/skill-icons/astro.png";
+import docker from "@/assets/skill-icons/docker.png";
 import reactNative from "@/assets/skill-icons/react-native.png";
 
 const skills = [
@@ -92,6 +93,11 @@ const skills = [
     title: "Git",
     imgSrc: git,
     value: 4.5,
+  },
+  {
+    title: "Docker",
+    imgSrc: docker,
+    value: 3.5,
   },
   {
     title: "Tanstack Query",
