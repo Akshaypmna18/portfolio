@@ -12,27 +12,24 @@ import { experiencesData } from "@/lib/experience-data";
 
 function Experience() {
   const ref = useIsVisible("Experience");
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   return (
-    <motion.section
-      initial={{ opacity: 0, scale: 0.5 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, stiffness: 250 }}
-      viewport={{
-        once: true,
-      }}
-      id="experience"
-      className="scroll-mt-36"
-      ref={ref}
-    >
+    <section id="experience" className="scroll-mt-36" ref={ref}>
       <h2 className="section-heading">Experience</h2>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline
+        lineColor={
+          resolvedTheme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)"
+        }
+      >
         {experiencesData.map((item, index) => (
           <Fragment key={index}>
             <VerticalTimelineElement
+              visible={true}
               contentStyle={{
                 background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                  resolvedTheme === "light"
+                    ? "#f3f4f6"
+                    : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
@@ -40,7 +37,7 @@ function Experience() {
               }}
               contentArrowStyle={{
                 borderRight:
-                  theme === "light"
+                  resolvedTheme === "light"
                     ? "0.4rem solid #9ca3af"
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
@@ -48,20 +45,22 @@ function Experience() {
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                  resolvedTheme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
+              <h3 className="font-medium capitalize text-base">{item.title}</h3>
+              <p className="font-normal !mt-0 text-sm italic">
+                {item.location}
               </p>
+              <p className="!mt-1 !font-normal ">{item.description}</p>
             </VerticalTimelineElement>
           </Fragment>
         ))}
       </VerticalTimeline>
-    </motion.section>
+    </section>
   );
 }
 
