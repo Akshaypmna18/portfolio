@@ -5,24 +5,24 @@ export const experiencesData = [
   {
     title: "Junior Front-End Developer (Part-time)",
     location: "Woxware | Abu Dhabi, UAE (Remote)",
-    // description:
-    //   "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    description:
+      "Created reusable UI components with Storybook and used headless libraries like Radix and Shadcn UI for accessible designs. Wrote clean code, tested components, and used GitLab for teamwork, including pull requests and branching.",
     icon: createElement(BoxIcon),
     date: "Oct 2023 - Dec 2023",
   },
   {
     title: "Junior Front-End Developer (Part-time)",
     location: "Dexa IT Pvt. Ltd. | Tamil Nadu, India (Remote)",
-    // description:
-    //   "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    description:
+      "Developed responsive web apps by collaborating with the team and integrating complex APIs to improve features. Worked on UI designs to enhance performance and user experience across devices.",
     icon: createElement(GearIcon),
     date: "Oct 2023 - Dec 2023",
   },
   {
     title: "Front-End Developer (Full-time)",
     location: "Dexa IT Pvt. Ltd. | Tamil Nadu, India (Remote)",
-    // description:
-    //   "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    description:
+      "Built scalable and optimized applications using advanced React features. Followed clean coding practices like SOLID and DRY. Created custom React hooks for reusable logic and better maintainability.",
     icon: createElement(CodeIcon),
     date: "Jan 2024 - present",
   },
