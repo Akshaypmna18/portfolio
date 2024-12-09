@@ -14,7 +14,18 @@ function Experience() {
   const ref = useIsVisible("Experience");
   const { resolvedTheme } = useTheme();
   return (
-    <section id="experience" className="scroll-mt-36" ref={ref}>
+    <motion.section
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, stiffness: 250 }}
+      viewport={{
+        once: true,
+      }}
+      ref={ref}
+      id="experience"
+      className="scroll-mt-36"
+      ref={ref}
+    >
       <h2 className="section-heading">Experience</h2>
       <VerticalTimeline
         lineColor={
@@ -52,15 +63,20 @@ function Experience() {
               }}
             >
               <h3 className="font-medium capitalize text-base">{item.title}</h3>
-              <p className="font-normal !mt-0 text-sm italic">
+              <a
+                className="!mt-0 text-sm italic hover:text-primaryColor hover:underline"
+                href={item.company_link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {item.location}
-              </p>
-              <p className="!mt-1 !font-normal ">{item.description}</p>
+              </a>
+              <p className="!mt-1 text-muted-foreground">{item.description}</p>
             </VerticalTimelineElement>
           </Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 }
 
