@@ -19,7 +19,7 @@ import jQuery from "@/assets/skill-icons/jQuery.png";
 import nodejs from "@/assets/skill-icons/nodejs.png";
 import expressjs from "@/assets/skill-icons/expressjs.png";
 import mongodb from "@/assets/skill-icons/mongodb.png";
-import prisma from "@/assets/skill-icons/prisma.png";
+import drizzle from "@/assets/skill-icons/drizzle.webp";
 import postgres from "@/assets/skill-icons/postgres.png";
 import tanstackQuery from "@/assets/skill-icons/react-query.png";
 import framerMotion from "@/assets/skill-icons/framer-motion.png";
@@ -27,6 +27,7 @@ import zod from "@/assets/skill-icons/zod.png";
 import astro from "@/assets/skill-icons/astro.png";
 import docker from "@/assets/skill-icons/docker.png";
 import reactNative from "@/assets/skill-icons/react-native.png";
+import reactRouter from "@/assets/skill-icons/react-router.png";
 
 const skills = [
   {
@@ -52,22 +53,22 @@ const skills = [
   {
     title: "React JS",
     imgSrc: react,
+    value: 4.5,
+  },
+  {
+    title: "React Router 7",
+    imgSrc: reactRouter,
     value: 4,
   },
   {
     title: "Next.js 14",
     imgSrc: nextjs,
-    value: 3.5,
+    value: 4,
   },
   {
     title: "Zustand",
     imgSrc: zustand,
     value: 4,
-  },
-  {
-    title: "Redux Toolkit",
-    imgSrc: redux,
-    value: 3,
   },
   {
     title: "Tailwind v3",
@@ -77,16 +78,6 @@ const skills = [
   {
     title: "Storybook",
     imgSrc: storybook,
-    value: 4,
-  },
-  {
-    title: "React Testing Library",
-    imgSrc: testingLibrary,
-    value: 3.5,
-  },
-  {
-    title: "Vitest",
-    imgSrc: vitest,
     value: 4,
   },
   {
@@ -102,7 +93,7 @@ const skills = [
   {
     title: "Tanstack Query",
     imgSrc: tanstackQuery,
-    value: 3,
+    value: 3.5,
   },
   {
     title: "Zod",
@@ -110,19 +101,19 @@ const skills = [
     value: 3.5,
   },
   {
-    title: "Framer Motion",
-    imgSrc: framerMotion,
-    value: 3,
-  },
-  {
-    title: "React Native",
-    imgSrc: reactNative,
-    value: 3,
-  },
-  {
     title: "Astro",
     imgSrc: astro,
-    value: 3,
+    value: 4,
+  },
+  {
+    title: "Drizzle ORM",
+    imgSrc: drizzle,
+    value: 2.5,
+  },
+  {
+    title: "Postgres",
+    imgSrc: postgres,
+    value: 2.5,
   },
   {
     title: "Bootstrap v5",
@@ -135,19 +126,9 @@ const skills = [
     value: 4,
   },
   {
-    title: "Firebase",
-    imgSrc: firebase,
-    value: 3.5,
-  },
-  {
-    title: "JQuery",
-    imgSrc: jQuery,
-    value: 3.5,
-  },
-  {
-    title: "Figma",
-    imgSrc: figma,
-    value: 3.5,
+    title: "Redux Toolkit",
+    imgSrc: redux,
+    value: 3,
   },
   {
     title: "Node.js",
@@ -165,14 +146,39 @@ const skills = [
     value: 2.5,
   },
   {
-    title: "Prisma",
-    imgSrc: prisma,
-    value: 2.5,
+    title: "JQuery",
+    imgSrc: jQuery,
+    value: 3.5,
   },
   {
-    title: "Postgres",
-    imgSrc: postgres,
-    value: 2.5,
+    title: "React Testing Library",
+    imgSrc: testingLibrary,
+    value: 3.5,
+  },
+  {
+    title: "Vitest",
+    imgSrc: vitest,
+    value: 4,
+  },
+  {
+    title: "Framer Motion",
+    imgSrc: framerMotion,
+    value: 3,
+  },
+  {
+    title: "React Native",
+    imgSrc: reactNative,
+    value: 3,
+  },
+  {
+    title: "Firebase",
+    imgSrc: firebase,
+    value: 3.5,
+  },
+  {
+    title: "Figma",
+    imgSrc: figma,
+    value: 3.5,
   },
 ] as const;
 export default skills;
