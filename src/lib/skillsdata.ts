@@ -25,7 +25,8 @@ import tanstackQuery from "@/assets/skill-icons/react-query.png";
 import framerMotion from "@/assets/skill-icons/framer-motion.png";
 import zod from "@/assets/skill-icons/zod.png";
 import astro from "@/assets/skill-icons/astro.png";
-import docker from "@/assets/skill-icons/docker.png";
+// import docker from "@/assets/skill-icons/docker.png";
+import cloudflare from "@/assets/skill-icons/cloudflare.png";
 import reactNative from "@/assets/skill-icons/react-native.png";
 import reactRouter from "@/assets/skill-icons/react-router.png";
 
@@ -85,11 +86,11 @@ const skills = [
     imgSrc: git,
     value: 4.5,
   },
-  {
-    title: "Docker",
-    imgSrc: docker,
-    value: 3.5,
-  },
+  // {
+  //   title: "Docker",
+  // imgSrc: docker,
+  //   value: 3.5,
+  // },
   {
     title: "Tanstack Query",
     imgSrc: tanstackQuery,
@@ -104,6 +105,11 @@ const skills = [
     title: "Astro",
     imgSrc: astro,
     value: 4,
+  },
+  {
+    title: "Cloudflare",
+    imgSrc: cloudflare,
+    value: 3,
   },
   {
     title: "Drizzle ORM",

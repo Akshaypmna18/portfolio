@@ -18,50 +18,52 @@ function About() {
     >
       <h2 className="section-heading">About me</h2>
       <p>
-        I'm from Perinthalmanna, Kerala, India. After earning my bachelor's
+        I'm from Perinthalmanna, Kerala, India. After completing my bachelor's
         degree in
         <span className="font-medium text-primaryColor">
           {" "}
-          Computer Applications 
-        </span>{" "}
-        in 2023, I decided to pursue my passion for programming. I am a self-taught
-        front-end developer with a love for{" "}
-        <span className="italic text-primaryColor"> problem-solving</span>,{" "}
-        <span className="italic text-primaryColor">design</span>, and{" "}
-        <span className="italic text-primaryColor">debugging</span>, with a core
-        stack that includes{" "}
-        <span className="font-medium text-primaryColor">React</span>,{" "}
-        <span className="font-medium text-primaryColor">Next.js</span>,{" "}
-        <span className="font-medium text-primaryColor">Zustand</span>, and{" "}
-        <span className="font-medium text-primaryColor">Tailwind CSS</span>. I'm
-        also familiar with{" "}
-        <span className="font-medium text-primaryColor">TypeScript</span> and{" "}
-        <span className="font-medium text-primaryColor">Redux Toolkit</span>.
+          Computer Applications{" "}
+        </span>
+        in 2023, I started my journey as a developer. Over time, I have grown
+        into a
+        <span className="font-medium text-primaryColor">
+          {" "}
+          full-stack developer{" "}
+        </span>
+        who enjoys{" "}
+        <span className="italic text-primaryColor">problem-solving</span>,
+        <span className="italic text-primaryColor"> design</span>, and
+        <span className="italic text-primaryColor"> debugging</span>. My core
+        stack includes
+        <span className="font-medium text-primaryColor"> React</span> and its
+        frameworks, along with{" "}
+        <span className="font-medium text-primaryColor">Zustand</span> and
+        <span className="font-medium text-primaryColor"> Tailwind CSS</span>.
+        Recently, my main focus has been exploring and building with{" "}
+        <span className="underline text-primaryColor">AI agents</span>.
       </p>
       <br />
       <p>
-        Collaborating with different teams of great developers on both{" "}
-        <span className="font-medium text-primaryColor"> open source </span> and{" "}
-        <span className="font-medium text-primaryColor"> private </span>{" "}
-        projects has increased my confidence and improved my{" "}
-        <span className="font-medium text-primaryColor"> technical </span>
-        and{" "}
-        <span className="font-medium text-primaryColor">
-          {" "}
-          collaborative{" "}
+        Working with product startups and collaborating with talented engineers
+        on both{" "}
+        <span className="font-medium text-primaryColor">open source</span> and
+        <span className="font-medium text-primaryColor"> private</span> projects
+        has sharpened my{" "}
+        <span className="font-medium text-primaryColor">technical </span>
+        and <span className="font-medium text-primaryColor">
+          collaborative
         </span>{" "}
-        skills. Currently, I am actively seeking
+        skills. I’m now looking to take on
         <span className="font-medium text-primaryColor">
-          {" "}
-          frontend roles{" "}
+          new challenges
         </span>{" "}
-        where I can contribute my skills and expertise. Outside of coding, I
-        enjoy <span className="italic">watching movies and series</span>,{" "}
-        <span className="italic">playing games</span>, and spending quality time
-        with <span className="italic">friends and family</span>. I'm always
-        attracted to the{" "}
-        <span className="font-medium">latest technologies</span> and stay
-        updated to explore <span className="italic">new possibilities</span>.
+        that push me beyond my comfort zone and help me grow as a developer.
+        Outside of coding, I enjoy <span className="italic">movies</span>,
+        <span className="italic"> gaming</span>, and spending time with
+        <span className="italic"> friends and family</span>. I stay curious
+        about the
+        <span className="font-medium"> latest technologies </span>
+        and love exploring <span className="italic">new possibilities</span>.
       </p>
     </motion.section>
   );

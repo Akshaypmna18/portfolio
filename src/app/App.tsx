@@ -19,6 +19,7 @@ import ActiveSectionContextProvider from "@/features/scrollHandlers/ActiveSectio
 export default function App() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
+
   return (
     <ActiveSectionContextProvider>
       <>
