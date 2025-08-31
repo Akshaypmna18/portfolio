@@ -55,7 +55,7 @@ function About() {
         </span>{" "}
         skills. I’m now looking to take on
         <span className="font-medium text-primaryColor">
-          new challenges
+        {" "}new challenges
         </span>{" "}
         that push me beyond my comfort zone and help me grow as a developer.
         Outside of coding, I enjoy <span className="italic">movies</span>,
