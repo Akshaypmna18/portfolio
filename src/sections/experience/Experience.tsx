@@ -9,12 +9,21 @@ import "react-vertical-timeline-component/style.min.css";
 import { useTheme } from "next-themes";
 import { experiencesData } from "@/lib/experience-data";
 import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Experience() {
   const ref = useIsVisible("Experience", 0.2);
   const { resolvedTheme } = useTheme();
 
   const [isLarge, setIsLarge] = useState(false);
+
+  // Create refs for each experience item
+  const ref0 = useInView({ threshold: 0.2, triggerOnce: true });
+  const ref1 = useInView({ threshold: 0.2, triggerOnce: true });
+  const ref2 = useInView({ threshold: 0.2, triggerOnce: true });
+  const ref3 = useInView({ threshold: 0.2, triggerOnce: true });
+
+  const timelineRefs = [ref0, ref1, ref2, ref3];
 
   useEffect(() => {
     const handleResize = () => setIsLarge(window.innerWidth >= 1170);
@@ -57,45 +66,47 @@ function Experience() {
         }
       >
         {experiencesData.map((experience, index) => (
-          <VerticalTimelineElement
-            key={index}
-            visible={true}
-            contentStyle={{
-              background:
-                resolvedTheme === "light"
-                  ? "#f3f4f6"
-                  : "rgba(255, 255, 255, 0.05)",
-              boxShadow: "none",
-              border: "1px solid rgba(0, 0, 0, 0.05)",
-              textAlign: "left",
-              padding: "1.3rem 2rem",
-              borderRadius: "10px",
-            }}
-            contentArrowStyle={{
-              borderRight:
-                resolvedTheme === "light"
-                  ? "0.4rem solid #9ca3af"
-                  : "0.4rem solid rgba(255, 255, 255, 0.5)",
-            }}
-            date={experience.date}
-            icon={experience.icon}
-            iconStyle={iconStyle}
-          >
-            <h3 className="font-medium capitalize text-base">
-              {experience.title}
-            </h3>
-            <a
-              className="!mt-0 text-sm italic hover:text-primaryColor hover:underline"
-              href={experience.company_link}
-              target="_blank"
-              rel="noopener noreferrer"
+          <div ref={timelineRefs[index].ref} key={index}>
+            <VerticalTimelineElement
+              position={index % 2 === 0 ? "left" : "right"}
+              visible={timelineRefs[index].inView}
+              contentStyle={{
+                background:
+                  resolvedTheme === "light"
+                    ? "#f3f4f6"
+                    : "rgba(255, 255, 255, 0.05)",
+                boxShadow: "none",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
+                textAlign: "left",
+                padding: "1.3rem 2rem",
+                borderRadius: "10px",
+              }}
+              contentArrowStyle={{
+                borderRight:
+                  resolvedTheme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
+              }}
+              date={experience.date}
+              icon={experience.icon}
+              iconStyle={iconStyle}
             >
-              {experience.location}
-            </a>
-            <p className="!mt-1 text-muted-foreground text-sm">
-              {experience.description}
-            </p>
-          </VerticalTimelineElement>
+              <h3 className="font-medium capitalize text-base">
+                {experience.title}
+              </h3>
+              <a
+                className="!mt-0 text-sm italic hover:text-primaryColor hover:underline"
+                href={experience.company_link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {experience.location}
+              </a>
+              <p className="!mt-1 text-muted-foreground text-sm">
+                {experience.description}
+              </p>
+            </VerticalTimelineElement>
+          </div>
         ))}
       </VerticalTimeline>
     </motion.section>
