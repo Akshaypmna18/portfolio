@@ -25,7 +25,7 @@ function Projects() {
           </Fragment>
         ))}
       </div>
-      <Button asChild variant={"link"}>
+      {/* <Button asChild variant={"link"}>
         <Link
           href="/small-projects"
           prefetch={true}
@@ -34,7 +34,7 @@ function Projects() {
         >
           More
         </Link>
-      </Button>
+      </Button> */}
     </motion.section>
   );
 }
