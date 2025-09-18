@@ -35,7 +35,7 @@ function Header({ scrollYProgress }: Props) {
       <SheetShadcn />
       <>
         <NavBar />
-        <LinkIcons className="hidden md:flex" />
+        <LinkIcons className="hidden lg:flex" />
       </>
     </header>
   );

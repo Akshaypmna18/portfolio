@@ -66,7 +66,11 @@ function Experience() {
         }
       >
         {experiencesData.map((experience, index) => (
-          <div ref={timelineRefs[index].ref} key={index}>
+          <div
+            ref={timelineRefs[index].ref}
+            key={index}
+            className="mb-6 xl:mb-0"
+          >
             <VerticalTimelineElement
               position={index % 2 === 0 ? "left" : "right"}
               visible={timelineRefs[index].inView}

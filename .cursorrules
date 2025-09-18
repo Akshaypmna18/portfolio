@@ -1,0 +1,234 @@
+# Portfolio Project - Cursor AI Rules & Quick Reference
+
+## 🎯 Project Overview
+
+**Portfolio Website** - Modern developer portfolio with Next.js 14, TypeScript, Material-UI, Radix UI, Framer Motion, and Tailwind CSS.
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14.0.3 (App Router)
+- **Language**: TypeScript 5+
+- **Styling**: Tailwind CSS + Material-UI + Radix UI
+- **Animations**: Framer Motion
+- **Forms**: React Hook Form + Zod validation
+- **Themes**: next-themes (dark/light mode)
+- **Email**: Resend API
+- **Storybook**: Component development & testing
+
+## 🚀 Cursor AI 2025+ Optimization Features
+
+### Essential Cursor Features
+
+- **Inline Editing**: Highlight code + CTRL/CMD + I for AI-suggested changes
+- **Smart Completion**: Actively trigger completions with type inference
+- **Memories**: Leverage Cursor's memory for contextual understanding
+- **MCP Integration**: Use Model Context Protocols for latest knowledge
+
+### File Management
+
+- **Indexing**: Use `.cursorignore` for node_modules, build, dist
+- **Reference**: Use `.cursorindexignore` for large assets without indexing
+- **MCP Config**: Configure in `.cursor/mcp.json` for team consistency
+
+## 📋 Development Standards
+
+### Import Order
+
+```typescript
+// 1. React & Next.js hooks
+import { useState, useEffect, useMemo, useCallback } from "react";
+import { useRouter, usePathname } from "next/navigation";
+
+// 2. Third-party hooks
+import { useForm } from "react-hook-form";
+import { useInView } from "react-intersection-observer";
+
+// 3. Components
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
+// 4. Icons
+import { Mail, Github, Linkedin } from "lucide-react";
+```
+
+### Component Structure
+
+```typescript
+// 1. Form hooks (if applicable)
+const form = useForm<FormData>();
+
+// 2. Router hooks
+const router = useRouter();
+const pathname = usePathname();
+
+// 3. Refs
+const ref = useRef<HTMLDivElement>(null);
+
+// 4. State
+const [isLoading, setIsLoading] = useState(false);
+
+// 5. Memoized values
+const memoizedValue = useMemo(() => expensiveCalculation(), [deps]);
+
+// 6. Effects
+useEffect(() => {
+  // side effects
+}, [deps]);
+
+// 7. Callbacks
+const handleClick = useCallback(() => {
+  // callback logic
+}, [deps]);
+
+// 8. Functions
+const processData = (data: any) => {
+  // function logic
+};
+
+// 9. Return JSX
+return <div>...</div>;
+```
+
+## 🎨 Styling Guidelines
+
+### Tailwind + Material-UI Integration
+
+- Use Tailwind for layout and spacing
+- Use Material-UI for complex components
+- Use Radix UI for accessible primitives
+- Maintain consistent design tokens
+
+### Theme System
+
+- Support dark/light mode with next-themes
+- Use CSS variables for theme colors
+- Implement smooth theme transitions
+
+## ⚡ Performance Standards
+
+### Optimization Rules
+
+- Use `useMemo` only for expensive calculations
+- Use `useCallback` only for stable function references
+- Implement proper loading states
+- Use React.memo for pure components
+- Optimize images with Next.js Image component
+
+### File Size Limits
+
+- Keep components under 150 lines
+- Split large components into smaller ones
+- Use dynamic imports for code splitting
+
+## 🔧 Code Quality
+
+### Error Handling
+
+- Implement error boundaries
+- Use proper loading states
+- Handle form validation errors
+- Provide user-friendly error messages
+
+### Accessibility
+
+- Use semantic HTML elements
+- Implement ARIA labels
+- Ensure keyboard navigation
+- Test with screen readers
+
+### TypeScript
+
+- Use strict type checking
+- Define proper interfaces
+- Avoid `any` types
+- Use type guards when needed
+
+## 🚫 Code Anti-Patterns
+
+### Avoid
+
+- `console.log` statements in production
+- Inline styles (use Tailwind classes)
+- Prop drilling (use context or state management)
+- Unnecessary re-renders
+- Hardcoded values (use constants)
+
+### Prefer
+
+- Self-explanatory variable names
+- Composition over inheritance
+- Functional components
+- Custom hooks for reusable logic
+- TypeScript strict mode
+
+## 🎯 AI Development Workflow
+
+### Mandatory 6-Step Process
+
+1. **UNDERSTAND & LIST**: Break down requirements
+2. **RESEARCH LATEST TRENDS**: Check 2025+ patterns
+3. **PLAN & EXPLAIN**: Detail implementation steps
+4. **HIGHLIGHT RISKS**: Identify potential issues
+5. **WAIT FOR CONFIRMATION**: Get explicit approval
+6. **ASK CLARIFICATIONS**: Resolve ambiguities
+
+### AI Prompts for Common Tasks
+
+#### New Feature Development
+
+```
+"Create a [feature] component with:
+- TypeScript interfaces
+- Responsive design
+- Dark mode support
+- Accessibility features
+- Performance optimization
+- Error handling"
+```
+
+#### Refactoring
+
+```
+"Refactor [component] to:
+- Improve performance
+- Enhance accessibility
+- Add TypeScript types
+- Optimize for mobile
+- Implement modern patterns"
+```
+
+## 📚 Quick Reference
+
+### Common Patterns
+
+- **Forms**: React Hook Form + Zod + Material-UI
+- **Animations**: Framer Motion with intersection observer
+- **Themes**: next-themes with CSS variables
+- **API**: Server actions with proper error handling
+- **Email**: Resend API with form validation
+
+### File Naming
+
+- Components: `PascalCase.tsx`
+- Hooks: `useCamelCase.ts`
+- Utils: `camelCase.ts`
+- Types: `types.ts` or `interface.ts`
+
+## 🔗 Reference Files
+
+- `PROJECT_DEVELOPMENT_PROMPT.md` - Complete development guide
+- `package.json` - Dependencies and scripts
+- `tailwind.config.js` - Styling configuration
+- `tsconfig.json` - TypeScript configuration
+
+## 🎨 Design System
+
+- **Colors**: Use Tailwind color palette
+- **Typography**: Material-UI typography system
+- **Spacing**: Tailwind spacing scale
+- **Components**: Radix UI primitives + custom styling
+- **Animations**: Framer Motion with reduced motion support
+
+---
+
+_Last updated: 2025 - Optimized for Cursor AI 2025+ features_
