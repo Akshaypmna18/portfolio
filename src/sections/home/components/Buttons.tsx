@@ -39,7 +39,7 @@ function Buttons() {
 
       <Button variant="secondary" asChild className="btn-hover rounded-full">
         <a
-          href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay_K%C2%B7Front_End_Dev.pdf"
+          href="https://docs.google.com/viewer?url=https://github.com/Akshaypmna18/portfolio/raw/master/src/assets/Akshay%20K%20-%20Resume.pdf"
           target="_blank"
           rel="noreferrer"
         >
