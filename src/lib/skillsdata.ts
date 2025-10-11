@@ -26,7 +26,7 @@ import zod from "@/assets/skill-icons/zod.png";
 import astro from "@/assets/skill-icons/astro.png";
 // import docker from "@/assets/skill-icons/docker.png";
 import cloudflare from "@/assets/skill-icons/cloudflare.png";
-import hono from "@/assets/skill-icons/hono.png";
+import hono from "@/assets/skill-icons/hono.webp";
 import reactNative from "@/assets/skill-icons/react-native.png";
 import reactRouter from "@/assets/skill-icons/react-router.png";
 
