@@ -15,7 +15,6 @@ import firebase from "@/assets/skill-icons/firebase.png";
 import figma from "@/assets/skill-icons/figma.png";
 import git from "@/assets/skill-icons/git.png";
 import vitest from "@/assets/skill-icons/vitest.png";
-import jQuery from "@/assets/skill-icons/jQuery.png";
 import nodejs from "@/assets/skill-icons/nodejs.png";
 import expressjs from "@/assets/skill-icons/expressjs.png";
 import mongodb from "@/assets/skill-icons/mongodb.png";
@@ -27,6 +26,7 @@ import zod from "@/assets/skill-icons/zod.png";
 import astro from "@/assets/skill-icons/astro.png";
 // import docker from "@/assets/skill-icons/docker.png";
 import cloudflare from "@/assets/skill-icons/cloudflare.png";
+import hono from "@/assets/skill-icons/hono.png";
 import reactNative from "@/assets/skill-icons/react-native.png";
 import reactRouter from "@/assets/skill-icons/react-router.png";
 
@@ -94,12 +94,12 @@ const skills = [
   {
     title: "Tanstack Query",
     imgSrc: tanstackQuery,
-    value: 3.5,
+    value: 4,
   },
   {
     title: "Zod",
     imgSrc: zod,
-    value: 3.5,
+    value: 4,
   },
   {
     title: "Astro",
@@ -109,12 +109,17 @@ const skills = [
   {
     title: "Cloudflare",
     imgSrc: cloudflare,
-    value: 3,
+    value: 4,
   },
   {
     title: "Drizzle ORM",
     imgSrc: drizzle,
-    value: 2.5,
+    value: 3.5,
+  },
+  {
+    title: "Hono",
+    imgSrc: hono,
+    value: 3.5,
   },
   {
     title: "Postgres",
@@ -139,21 +144,16 @@ const skills = [
   {
     title: "Node.js",
     imgSrc: nodejs,
-    value: 2.5,
+    value: 3.5,
   },
   {
     title: "Express.js",
     imgSrc: expressjs,
-    value: 2.5,
+    value: 3.5,
   },
   {
     title: "Mongodb",
     imgSrc: mongodb,
-    value: 2.5,
-  },
-  {
-    title: "JQuery",
-    imgSrc: jQuery,
     value: 3.5,
   },
   {
