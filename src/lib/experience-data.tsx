@@ -45,7 +45,7 @@ export const experiencesData = [
   },
   {
     title: "Frontend Developer",
-    location: "Communiqate AI | San Diego, UAE (Remote)",
+    location: "Communiqate AI | San Diego, USA (Remote)",
     company_link: "https://www.communiqate.ai",
     description:
       "Built frontend features, improved user flows, and collaborated on UI enhancements across projects.",
