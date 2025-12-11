@@ -22,8 +22,9 @@ function Experience() {
   const ref1 = useInView({ threshold: 0.2, triggerOnce: true });
   const ref2 = useInView({ threshold: 0.2, triggerOnce: true });
   const ref3 = useInView({ threshold: 0.2, triggerOnce: true });
+  const ref4 = useInView({ threshold: 0.2, triggerOnce: true });
 
-  const timelineRefs = [ref0, ref1, ref2, ref3];
+  const timelineRefs = [ref0, ref1, ref2, ref3, ref4];
 
   useEffect(() => {
     const handleResize = () => setIsLarge(window.innerWidth >= 1170);
