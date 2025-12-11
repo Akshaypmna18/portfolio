@@ -3,6 +3,7 @@ import {
   LayersIcon,
   LaptopIcon,
   RocketIcon,
+  CubeIcon
 } from "@radix-ui/react-icons";
 
 export const experiencesData = [
@@ -31,7 +32,7 @@ export const experiencesData = [
     description:
       "Led frontend architecture, built reusable components, and optimized performance with caching and state management.",
     icon: <CodeIcon />, // 👨‍💻 stronger dev role, architecture
-    date: "Jan 2024 – Present",
+    date: "Jan 2024 – Dex 2025",
   },
   {
     title: "Full-Stack Developer",
@@ -41,5 +42,14 @@ export const experiencesData = [
       "Worked on multiple projects, applying clean architecture (DDD, SOLID) and writing reliable tests with Vitest + RTL.",
     icon: <RocketIcon />, // 🚀 represents growth & full-stack ownership
     date: "Jul 2024 – Present",
+  },
+  {
+    title: "Frontend Developer",
+    location: "Communiqate AI | San Diego, UAE (Remote)",
+    company_link: "https://www.communiqate.ai",
+    description:
+      "Built frontend features, improved user flows, and collaborated on UI enhancements across projects.",
+    icon: <CubeIcon />, // 🚀 represents growth & full-stack ownership
+    date: "Dec 2025 – Present",
   },
 ] as const;
