@@ -32,7 +32,7 @@ export const experiencesData = [
     description:
       "Led frontend architecture, built reusable components, and optimized performance with caching and state management.",
     icon: <CodeIcon />, // 👨‍💻 stronger dev role, architecture
-    date: "Jan 2024 – Dex 2025",
+    date: "Jan 2024 – Dec 2025",
   },
   {
     title: "Full-Stack Developer",
