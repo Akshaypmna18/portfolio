@@ -41,7 +41,7 @@ export const experiencesData = [
     description:
       "Worked on multiple projects, applying clean architecture (DDD, SOLID) and writing reliable tests with Vitest + RTL.",
     icon: <RocketIcon />, // 🚀 represents growth & full-stack ownership
-    date: "Jul 2024 – Present",
+    date: "Jul 2025 – Present",
   },
   {
     title: "Frontend Developer",
